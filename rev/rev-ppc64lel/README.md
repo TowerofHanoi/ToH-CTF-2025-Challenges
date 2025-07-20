@@ -212,7 +212,8 @@ We can now see:
 After calling a big-endian function, the code switches back to the previous
 endianness with another `switch_endian` syscall before continuing.
 
-### Automation
+
+### Debugging
 
 At this point, it should be clear that we are dealing with a good amount of
 mixed little-endian and big-endian code. In fact, according to Ghidra, we have
@@ -221,14 +222,89 @@ scattered everywhere in the `.text` section of the original binary:
 
 ![Ghidra sidebar overview](./writeup/ghidra-overview.png)
 
-We are dealing with a tree of functions where endianness may (or may not) be
-switched before and after each call. Indeed, if we keep looking at other
-functions, we can see some that call multiple functions of different endianness
-in a row, each time using the same pattern of `tdi 0,r0,0x48; b +X;` or
-`b +8; <dummy insn>;` to perform an implicit test on the current endianness and
-decide whether `switch_endian` should be called or not.
+We are dealing with a tree of function calls where endianness may be switched
+between each call. What if we want to debug the program while it's running to
+see the actual code being executed, and what exactly is going on? We can do it,
+as long as we are careful about endian switches.
 
-The calls are all performed indirectly via `bctrl` after moving immediates into
+QEMU user does not know about `switch_endian`, so we have to resort to QEMU
+system. A simple Debian 12 PPC64LE image as shown in the handout README will
+suffice. We can add `-gdb tcp::1234` to the QEMU command line to enable remote
+GDB debugging and use `gdb-multiarch` to attach to it. Once in the GDB shell, we
+can set a breakpoint to a known address of the binary, and we'll hit it as soon
+as it's run (that is, given that there are no other binaries running at the same
+address in the VM, but that's unlikely).
+
+```sh
+qemu-system-ppc64 \
+    -machine pseries,x-vof=off \
+    -nographic \
+    -drive file=debian-12-nocloud-ppc64el-20250316-2053.qcow2,index=0,media=disk,format=qcow2 \
+    -drive file=./PPC64LEL,index=1,media=disk,format=raw \
+    -gdb tcp::1234
+
+# In another shell
+gdb-multiarch -ex 'target remote :1234' -ex 'b *0x10000fd8' -ex 'c'
+
+# In the QEMU VM (note that the key is not all zeroes)
+cat /dev/sdb > PPC64LEL
+chmod +x PPC64LEL
+./PPC64LEL 000000000000000000000000000000000000000000002000000000000040000000000000000000000000000000000000
+```
+
+The tricky part is that, if we put breakpoints into code that will later run in
+a different endianness, we also need to explicitly tell GDB to change endianness
+via `set endian {bit|little}`. For example, here:
+
+```none
+10000fd0 01 fe 21 f8    stdu       r1,local_200(r1)
+10000fd4 6b 01 00 38    li         r0,0x16b
+10000fd8 02 00 00 44    sc         0x0
+10000fdc 48 00 00 08    tdi        r0,0x48
+<...>
+```
+
+Single stepping past the `sc` instruction at `0x10000fd8` is not possible
+because GDB will follow the VM into kernel space and step into syscall handler
+code. A breakpoint for `0x10000fdc` can be inserted, but onece the syscall is
+executed and the breakpoint is hit, all the registers will be in the wrong
+endianness so we must tell GDB to explicitly switch endianness.
+
+```none
+(gdb) b *0x10000fdc
+Breakpoint 1 at 0x10000fdc
+(gdb) c
+Continuing.
+
+Program received signal SIGTRAP, Trace/breakpoint trap.
+0xdc0f001000000000 in ?? ()
+(gdb) x/i $pc
+=> 0xdc0f001000000000:	Cannot access memory at address 0xdc0f001000000000
+(gdb) set endian big
+The target is set to big endian.
+(gdb) x/i $pc
+=> 0x10000fdc:	b       0x10000fe4
+(gdb)
+```
+
+
+### Automation
+
+We can keep playing around in the debugger or via manual byte-swapping, but
+there are a bit too many endianness switches involved to do everything by hand
+without losing our mind.
+
+If we take a look at the little endian functions that are correctly identified
+in Ghidra, we can start to understand how the whole thing works. A given
+verifier function can call multiple other functions of different endianness in a
+row, each time using the same pattern of `tdi 0,r0,0x48; b +X;` or
+`b +8; <dummy insn>;` to perform an implicit test on the current endianness and
+decide whether `switch_endian` should be called or not. If a check on the key
+succeeds, the next functions are called in the right endianness, otherwise they
+are called in the wrong endianness and everything crashes.
+
+In any case, all the calls are performed indirectly via `bctrl` after moving the
+function address into `ctr` and immediates for bit positions into parameter
 registers. For example:
 
 ```none
@@ -255,27 +331,24 @@ registers. For example:
 10000ce8 21 04 80 4e    bctrl
 ```
 
-Given that each function checks between 1 and 6 bits of the key, there are a lot
-of functions, so manual analysis is out of question (or well, it depends on how
-much you hate yourself). We need to automate things a bit.
-
-We have two main approaches to solve this:
+Each function checks between 1 and 6 bits of the key, and there are a lot
+of functions. To automate analysis we have two main approaches:
 
 1. Figure out a way to statically analyze the binary, recognizing and
    byte-swap big-endian instructions where needed, turning all code into
    little-endian. Once this is done, the program could theoretically be fed to
-   a symbolic execution tool like [angr](https://angr.io/) to calculate the key.
+   a symbolic execution tool like [angr](https://angr.io/) to calculate the key,
+   or even statically analyzed again to extract the key checks programmatically.
 
-2. Run the program under a debugger and figure out a way to identify the key
-   check patterns, correctly switching endianness and extracting the key a few
-   bits at a time. The one thing we must be careful with is the handling of
-   `switch_endian`. We must catch the syscall and switch the endianness of the
-   debugger every time.
+2. Run the program under GDB and figure out a way to identify the key check
+   patterns, correctly switching endianness and extracting the key a few bits at
+   a time. The one thing we must be careful with is the handling of
+   the endianness seen by the debugger as discussed in the previous section.
 
 Approach #2 involves writing something like a dumb homemade symbolic execution
 engine, which seems more fun than #1, so that is what I went with (I also did
 not want to lose my mind patching and realoading the binary into Ghidra 100
-times, I'd much rather look at the actual running code via GDB).
+times, I'd much rather step through the actual running code via GDB).
 
 We can create a Python GDB script that single-steps the program starting from a
 given initial breakpoint, and decides what to do depending on the encountered
@@ -289,33 +362,53 @@ instructions:
 - The comparison is always followed by a `beq` or `bne` instruction.
 
 There is a special case for leaf functions that do not call any other function
-and return the result of the check to the caller: they can either check a single
-bit and thus either return it as is or negate it with `not`, or they can check
-multiple bits via `xori`.
+and return the result of the check to the caller. They can either:
+
+- Check a single key bit and thus either return it as is or negate it via `not`
+  before returning it.
+- Check multiple key bits together: this is done via `xori` with the target
+  value.
 
 
-Complete Solution Script
-------------------------
+Complete Solution Scripts
+-------------------------
 
 Check out the full solution scripts in [`solver`](./solver). This is a lazy
-implementation of the above approach. It consists of a Python script that
-does the following:
+implementation of the above approach. It consists of a main Python script that
+assumes that the challenge binary is being run inside QEMU in a loop:
+
+```sh
+while :; do
+    ./PPC64LEL aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    sleep .05
+done
+```
+
+With this assumption in mind, it does the following:
 
 1. Starts with an empty guessed key of all zeroes.
-2. Attaches to the GDB port of a running `qemu-system-ppc64` that is running the
-   challenge in a loop.
-3. Inserts two breakpoints:
-   - Breakpoint A right before the root verification function is invoked.
-   - Breakpoint B at the last known branch after key bits are compared
+2. Attaches GDB to QEMU inserting two breakpoints:
+   - Breakpoint **A** right before the root verification function is invoked.
+   - Breakpoint **B** at the last known branch after key bits are compared
      (initially the same as the first breakpoint).
-4. When A is hit, the current key is written to memory.
-5. When B is hit, a `solve` command defined by a GDB python script is invoked to
-   single step to the next conditional branch, extracting the bits and the value
-   checked by the program and returning them to the caller to update the key.
-   The single stepping also takes care of switching endianness as needed via
-   `set endian` if the `switch_endian` syscall is encountered, and stopping in
-   case illegal instructions or segmentation fault, which may happen in case of
-   single-bit checks where the bit simply needs to be guessed.
+3. When **A** is hit, the key in memory is replaced with the currently guessed
+   one.
+4. When **B** is hit, a `solve` command defined by a second GDB python script is
+   invoked. This scipt:
 
-Steps 2-5 are repeated in a loop, advancing the second B breakpoint a little bit
-at a time, until all bits of the key are correctly extracted.
+   - Takes care of switching endianness as needed via `set endian` whenever `sc`
+     is encountered to execute the `switch_endian` (363) syscall.
+   - Identifies the interesting instructions (`bctrl`, `cmpwi`, `andi.` etc.)
+     and extracts the bits and the value checked by the program.
+   - Single steps the debugger until the next conditional branch (`beq`, `bne`)
+     is encountered or until a trap for segfault or illegal instruction.
+   - Returns this information to the caller script to update the guessed key
+     value before next round.
+
+Steps 2-4 are repeated in a loop, advancing breakpoint **B** and collecting a
+few bits of information about the key each time, until the whole key is
+extracted and a goal address is hit.
+
+Here's a bonus GIF of the solver in action:
+
+![Solver running](./writeup/solver.gif)
