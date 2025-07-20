@@ -1,0 +1,23 @@
+services:
+  chall:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    environment:
+      JWT_SECRET: your-super-secret-jwt-key-change-in-production-please
+    ports:
+      - "5000:5000"
+    restart: always
+  bot:
+    build:
+      context: ./bot
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "5001:5001"
+    depends_on:
+      - chall
+    environment:
+      APP_HOST: chall
+      APP_PORT: 5000
+      FLAG: toh{this_is_a_sample_flag}

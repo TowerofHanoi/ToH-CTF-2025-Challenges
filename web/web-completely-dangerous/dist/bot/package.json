@@ -1,0 +1,17 @@
+{
+  "name": "web-completely-dangerous-bot",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "ricy",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.0",
+    "playwright": "^1.54.1"
+  }
+}

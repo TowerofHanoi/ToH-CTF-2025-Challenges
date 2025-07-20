@@ -1,0 +1,14 @@
+[package]
+name = "solution"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.21.0"
+eyre = "0.6.8"
+rand = "0.8.5"
+reqwest = { version = "0.11.13", features = ["json", "cookies"] }
+serde_json = "1.0.91"
+tokio = { version = "1.24.2", features = ["macros", "rt"], default-features = false }

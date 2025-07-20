@@ -1,0 +1,5 @@
+/target
+/frontend
+.vscode
+/db
+docker-compose.yml

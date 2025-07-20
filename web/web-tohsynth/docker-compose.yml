@@ -1,0 +1,17 @@
+services:
+  web:
+    build:
+      context: ./src/web
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+  bot:
+    build:
+      context: ./src/bot
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
+    restart: unless-stopped
+    environment:
+      - FLAG=toh{REDACTED}
