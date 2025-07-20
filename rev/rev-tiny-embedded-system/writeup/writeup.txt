@@ -1,0 +1,45 @@
+A small binary file, less than 3KB.
+
+$ file firmware.bin
+firmware.bin: data
+
+$ strings firmware.bin
+ch32-cpp-runtime booting
+
+The only meaningful string is "ch32-cpp-runtime booting".
+Searching online for "ch32-cpp-runtime" finds this repo:
+
+https://sr.ht/~fedetft/ch32-cpp-runtime
+
+which is a runtime for a ch32v003 microcontroller. It is a RISCV chip with an
+rv32ec core. It is a tiny core only supporting the compressed instruction set
+extension. It does not even have the basic multiply and divide instructions.
+
+$ riscv-none-elf-objdump -D -b binary -m riscv:rv32ec firmware.bin > disassembled.txt
+
+Being a bare metal firmware and not a program to be run inside an OS, the
+firmware begins with the interrupt table, whose first entry is an instruction
+that is executed at boot. It jumps at the initialization code at 0x9c.
+RISCV is weird in that the reset is considered an interrupt and the code has
+to return from it, so the initialization code is split in two, and an mret
+instruction is used to "return" from the "interrupt".
+All this code is documented in the ch32-cpp-runtime repo so it is easy to follow.
+
+The second part of the initialization code and main have been fused by the
+compiler in a single function starting at 0x212.
+
+The code in main is just a long sequence of alternating calls to two functions
+at 0x11e and 0x150. The first is sleepTick() and the source for it can be found
+in the runtime.
+
+The function at 0x150 loops a number of time given as the function parameter
+calling the following function in sequence 0xf6, 0x11e, 0x10a, 0x11e.
+0x11e is the sleep functions, while 0xf6 and 0x10a toggle two GPIOs each in the
+opposite way.
+
+Turns out the function 0xf6 generates a 1000Hz square wave on the two GPIO pins
+for a number of milliseconds equals to the function parameter. So the code
+in main produces a sequence of square waves (beeps) and pauses (direct calls
+to sleepTick). The sequence forms a morse code message which is the key:
+
+toh53gg56hy7u732vb56h2g

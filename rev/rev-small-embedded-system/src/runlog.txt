@@ -1,0 +1,12 @@
+Starting Kernel... Ok
+Miosix v2.81 (stm32h755zi_nucleo, Jul 14 2025 18:44:30, gcc 9.2.0-mp3.2)
+Mounting MountpointFs as / ... Ok
+Mounting DevFs as /dev ... Ok
+Mounting RomFs as /bin ... Ok
+Mounting Fat32Fs as /sd ... Ok
+OS Timer freq = 200000000 Hz
+Available heap 119752 out of 128480 Bytes
+flag_generator starting on stm32h755...
+Your flag.txt is ready
+pid 1 exited
+Exit code is 0

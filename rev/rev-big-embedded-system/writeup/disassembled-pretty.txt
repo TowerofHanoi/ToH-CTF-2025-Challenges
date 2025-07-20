@@ -1,0 +1,1573 @@
+
+flag_generator:     file format elf32-littlearm
+
+
+Disassembly of section .interp:
+
+00010154 <.interp>:
+   10154:	62696c2f 	rsbvs	r6, r9, #12032	@ 0x2f00
+   10158:	2d646c2f 	stclcs	12, cr6, [r4, #-188]!	@ 0xffffff44
+   1015c:	756e696c 	strbvc	r6, [lr, #-2412]!	@ 0xfffff694
+   10160:	72612d78 	rsbvc	r2, r1, #120, 26	@ 0x1e00
+   10164:	2e66686d 	cdpcs	8, 6, cr6, cr6, cr13, {3}
+   10168:	332e6f73 			@ <UNDEFINED> instruction: 0x332e6f73
+	...
+
+Disassembly of section .note.gnu.build-id:
+
+00010170 <.note.gnu.build-id>:
+   10170:	00000004 	andeq	r0, r0, r4
+   10174:	00000014 	andeq	r0, r0, r4, lsl r0
+   10178:	00000003 	andeq	r0, r0, r3
+   1017c:	00554e47 	subseq	r4, r5, r7, asr #28
+   10180:	2334b380 	teqcs	r4, #128, 6
+   10184:	bc516c54 	mrrclt	12, 5, r6, r1, cr4
+   10188:	720ec755 	andvc	ip, lr, #22282240	@ 0x1540000
+   1018c:	704d7e1d 	subvc	r7, sp, sp, lsl lr
+   10190:	00694cba 	strhteq	r4, [r9], #-202	@ 0xffffff36
+
+Disassembly of section .note.ABI-tag:
+
+00010194 <__abi_tag>:
+   10194:	00000004 	andeq	r0, r0, r4
+   10198:	00000010 	andeq	r0, r0, r0, lsl r0
+   1019c:	00000001 	andeq	r0, r0, r1
+   101a0:	00554e47 	subseq	r4, r5, r7, asr #28
+   101a4:	00000000 	andeq	r0, r0, r0
+   101a8:	00000003 	andeq	r0, r0, r3
+   101ac:	00000002 	andeq	r0, r0, r2
+   101b0:	00000000 	andeq	r0, r0, r0
+
+Disassembly of section .gnu.hash:
+
+000101b4 <.gnu.hash>:
+   101b4:	00000011 	andeq	r0, r0, r1, lsl r0
+   101b8:	00000005 	andeq	r0, r0, r5
+   101bc:	00000008 	andeq	r0, r0, r8
+   101c0:	00000008 	andeq	r0, r0, r8
+   101c4:	01128268 	tsteq	r2, r8, ror #4
+   101c8:	81014d24 	tsthi	r1, r4, lsr #26
+   101cc:	0c008000 	stceq	0, cr8, [r0], {-0}
+   101d0:	21cc22a0 	biccs	r2, ip, r0, lsr #5
+   101d4:	40210252 	eormi	r0, r1, r2, asr r2
+   101d8:	08000080 	stmdaeq	r0, {r7}
+   101dc:	512328ed 			@ <UNDEFINED> instruction: 0x512328ed
+   101e0:	00000000 	andeq	r0, r0, r0
+   101e4:	00000005 	andeq	r0, r0, r5
+   101e8:	00000007 	andeq	r0, r0, r7
+   101ec:	0000000b 	andeq	r0, r0, fp
+   101f0:	0000000c 	andeq	r0, r0, ip
+   101f4:	0000000e 	andeq	r0, r0, lr
+   101f8:	00000000 	andeq	r0, r0, r0
+   101fc:	0000000f 	andeq	r0, r0, pc
+   10200:	00000013 	andeq	r0, r0, r3, lsl r0
+   10204:	00000016 	andeq	r0, r0, r6, lsl r0
+   10208:	00000000 	andeq	r0, r0, r0
+   1020c:	00000018 	andeq	r0, r0, r8, lsl r0
+   10210:	0000001c 	andeq	r0, r0, ip, lsl r0
+   10214:	0000001d 	andeq	r0, r0, sp, lsl r0
+   10218:	0000001e 	andeq	r0, r0, lr, lsl r0
+   1021c:	00000021 	andeq	r0, r0, r1, lsr #32
+	...
+   10228:	95c48f5a 	strbls	r8, [r4, #3930]	@ 0xf5a
+   1022c:	494fcd77 	stmdbmi	pc, {r0, r1, r2, r4, r5, r6, r8, sl, fp, lr, pc}^	@ <UNPREDICTABLE>
+   10230:	3ed82480 	cdpcc	4, 13, cr2, cr8, cr0, {4}
+   10234:	0d82b830 	stceq	8, cr11, [r2, #192]	@ 0xc0
+   10238:	21107108 	tstcs	r0, r8, lsl #2
+   1023c:	02079673 	andeq	r9, r7, #120586240	@ 0x7300000
+   10240:	f57c50d9 			@ <UNDEFINED> instruction: 0xf57c50d9
+   10244:	0f11ed7c 	svceq	0x0011ed7c
+   10248:	4e804a3f 			@ <UNDEFINED> instruction: 0x4e804a3f
+   1024c:	1c939ba7 	fldmiaxne	r3, {d9-d91}	@ Deprecated
+   10250:	cb6ecb22 	blgt	1bc2ee0 <__bss_end__+0x1bafd2c>
+   10254:	f63d4e2e 			@ <UNDEFINED> instruction: 0xf63d4e2e
+   10258:	f51166dc 			@ <UNDEFINED> instruction: 0xf51166dc
+   1025c:	b66b4979 			@ <UNDEFINED> instruction: 0xb66b4979
+   10260:	297bd1c2 	ldmdbcs	fp!, {r1, r6, r7, r8, ip, lr, pc}^
+   10264:	7c9c4772 	ldcvc	7, cr4, [ip], {114}	@ 0x72
+   10268:	4cd54529 	cfldr64mi	mvdx4, [r5], {41}	@ 0x29
+   1026c:	c957cf06 	ldmdbgt	r7, {r1, r2, r8, r9, sl, fp, lr, pc}^
+   10270:	4cd4b8c7 	ldclmi	8, cr11, [r4], {199}	@ 0xc7
+   10274:	0ee955cc 	cdpeq	5, 14, cr5, cr9, cr12, {6}
+   10278:	fe854bc2 	vminnm.f64	d4, d21, d2
+   1027c:	7c96e576 	cfldr32vc	mvfx14, [r6], {118}	@ 0x76
+   10280:	fc2c9e87 	stc2	14, cr9, [ip], #-540	@ 0xfffffde4
+   10284:	08ed4305 	stmiaeq	sp!, {r0, r2, r8, r9, lr}^
+   10288:	6ddaa0df 	ldclvs	0, cr10, [sl, #892]	@ 0x37c
+   1028c:	0f3b9a5a 	svceq	0x003b9a5a
+   10290:	430c9814 	movwmi	r9, #51220	@ 0xc814
+   10294:	0d827591 	cfstr32eq	mvfx7, [r2, #580]	@ 0x244
+   10298:	7c95e5c0 	cfldr32vc	mvfx14, [r5], {192}	@ 0xc0
+   1029c:	8e689e89 	cdphi	14, 6, cr9, cr8, cr9, {4}
+
+Disassembly of section .dynsym:
+
+000102a0 <.dynsym>:
+	...
+   102b0:	00000010 	andeq	r0, r0, r0, lsl r0
+	...
+   102bc:	00000020 	andeq	r0, r0, r0, lsr #32
+   102c0:	00000318 	andeq	r0, r0, r8, lsl r3
+	...
+   102cc:	00000012 	andeq	r0, r0, r2, lsl r0
+   102d0:	00000001 	andeq	r0, r0, r1
+	...
+   102dc:	00000020 	andeq	r0, r0, r0, lsr #32
+   102e0:	0000002c 	andeq	r0, r0, ip, lsr #32
+	...
+   102ec:	00000020 	andeq	r0, r0, r0, lsr #32
+   102f0:	0000027c 	andeq	r0, r0, ip, ror r2
+	...
+   102fc:	00000012 	andeq	r0, r0, r2, lsl r0
+   10300:	000001ca 	andeq	r0, r0, sl, asr #3
+	...
+   1030c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10310:	0000015e 	andeq	r0, r0, lr, asr r1
+	...
+   1031c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10320:	00000359 	andeq	r0, r0, r9, asr r3
+	...
+   1032c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10330:	00000046 	andeq	r0, r0, r6, asr #32
+	...
+   1033c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10340:	00000200 	andeq	r0, r0, r0, lsl #4
+   10344:	00013120 	andeq	r3, r1, r0, lsr #2
+   10348:	00000090 	muleq	r0, r0, r0
+   1034c:	00180011 	andseq	r0, r8, r1, lsl r0
+   10350:	000000c2 	andeq	r0, r0, r2, asr #1
+	...
+   1035c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10360:	0000036d 	andeq	r0, r0, sp, ror #6
+	...
+   1036c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10370:	00000238 	andeq	r0, r0, r8, lsr r2
+	...
+   1037c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10380:	00000336 	andeq	r0, r0, r6, lsr r3
+	...
+   1038c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10390:	00000140 	andeq	r0, r0, r0, asr #2
+	...
+   1039c:	00000012 	andeq	r0, r0, r2, lsl r0
+   103a0:	00000347 	andeq	r0, r0, r7, asr #6
+	...
+   103ac:	00000012 	andeq	r0, r0, r2, lsl r0
+   103b0:	00000226 	andeq	r0, r0, r6, lsr #4
+	...
+   103bc:	00000012 	andeq	r0, r0, r2, lsl r0
+   103c0:	0000012b 	andeq	r0, r0, fp, lsr #2
+	...
+   103cc:	00000012 	andeq	r0, r0, r2, lsl r0
+   103d0:	00000217 	andeq	r0, r0, r7, lsl r2
+	...
+   103dc:	00000012 	andeq	r0, r0, r2, lsl r0
+   103e0:	00000373 	andeq	r0, r0, r3, ror r3
+	...
+   103ec:	00000012 	andeq	r0, r0, r2, lsl r0
+   103f0:	000000aa 	andeq	r0, r0, sl, lsr #1
+   103f4:	00010c54 	andeq	r0, r1, r4, asr ip
+   103f8:	00000000 	andeq	r0, r0, r0
+   103fc:	00000012 	andeq	r0, r0, r2, lsl r0
+   10400:	0000017c 	andeq	r0, r0, ip, ror r1
+	...
+   1040c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10410:	000001e2 	andeq	r0, r0, r2, ror #3
+	...
+   1041c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10420:	000001fa 	strdeq	r0, [r0], -sl
+	...
+   1042c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10430:	000002c0 	andeq	r0, r0, r0, asr #5
+	...
+   1043c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10440:	0000033d 	andeq	r0, r0, sp, lsr r3
+	...
+   1044c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10450:	0000032f 	andeq	r0, r0, pc, lsr #6
+	...
+   1045c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10460:	0000014c 	andeq	r0, r0, ip, asr #2
+	...
+   1046c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10470:	000001da 	ldrdeq	r0, [r0], -sl
+	...
+   1047c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10480:	00000360 	andeq	r0, r0, r0, ror #6
+	...
+   1048c:	00000012 	andeq	r0, r0, r2, lsl r0
+   10490:	0000030e 	andeq	r0, r0, lr, lsl #6
+   10494:	00013090 	muleq	r1, r0, r0
+   10498:	0000008c 	andeq	r0, r0, ip, lsl #1
+   1049c:	00180011 	andseq	r0, r8, r1, lsl r0
+   104a0:	00000366 	andeq	r0, r0, r6, ror #6
+	...
+   104ac:	00000012 	andeq	r0, r0, r2, lsl r0
+   104b0:	00000342 	andeq	r0, r0, r2, asr #6
+	...
+   104bc:	00000012 	andeq	r0, r0, r2, lsl r0
+   104c0:	00000209 	andeq	r0, r0, r9, lsl #4
+	...
+   104cc:	00000012 	andeq	r0, r0, r2, lsl r0
+
+Disassembly of section .dynstr:
+
+000104d0 <.dynstr>:
+   104d0:	675f5f00 	ldrbvs	r5, [pc, -r0, lsl #30]
+   104d4:	5f6e6f6d 	svcpl	0x006e6f6d
+   104d8:	72617473 	rsbvc	r7, r1, #1929379840	@ 0x73000000
+   104dc:	005f5f74 	subseq	r5, pc, r4, ror pc	@ <UNPREDICTABLE>
+   104e0:	4d54495f 	vldrmi.16	s9, [r4, #-190]	@ 0xffffff42	@ <UNPREDICTABLE>
+   104e4:	7265645f 	rsbvc	r6, r5, #1593835520	@ 0x5f000000
+   104e8:	73696765 	cmnvc	r9, #26476544	@ 0x1940000
+   104ec:	54726574 	ldrbtpl	r6, [r2], #-1396	@ 0xfffffa8c
+   104f0:	6f6c434d 	svcvs	0x006c434d
+   104f4:	6154656e 	cmpvs	r4, lr, ror #10
+   104f8:	00656c62 	rsbeq	r6, r5, r2, ror #24
+   104fc:	4d54495f 	vldrmi.16	s9, [r4, #-190]	@ 0xffffff42	@ <UNPREDICTABLE>
+   10500:	6765725f 			@ <UNDEFINED> instruction: 0x6765725f
+   10504:	65747369 	ldrbvs	r7, [r4, #-873]!	@ 0xfffffc97
+   10508:	434d5472 	movtmi	r5, #54386	@ 0xd472
+   1050c:	656e6f6c 	strbvs	r6, [lr, #-3948]!	@ 0xfffff094
+   10510:	6c626154 	stfvse	f6, [r2], #-336	@ 0xfffffeb0
+   10514:	5a5f0065 	bpl	17d06b0 <__bss_end__+0x17bd4fc>
+   10518:	736c7453 	cmnvc	ip, #1392508928	@ 0x53000000
+   1051c:	74536349 	ldrbvc	r6, [r3], #-841	@ 0xfffffcb7
+   10520:	68633131 	stmdavs	r3!, {r0, r4, r5, r8, ip, sp}^
+   10524:	745f7261 	ldrbvc	r7, [pc], #-609	@ 1052c <__abi_tag+0x398>
+   10528:	74696172 	strbtvc	r6, [r9], #-370	@ 0xfffffe8e
+   1052c:	45634973 	strbmi	r4, [r3, #-2419]!	@ 0xfffff68d
+   10530:	63496153 	movtvs	r6, #37203	@ 0x9153
+   10534:	53524545 	cmppl	r2, #289406976	@ 0x11400000
+   10538:	62333174 	eorsvs	r3, r3, #116, 2
+   1053c:	63697361 	cmnvs	r9, #-2080374783	@ 0x84000001
+   10540:	74736f5f 	ldrbtvc	r6, [r3], #-3935	@ 0xfffff0a1
+   10544:	6d616572 	cfstr64vs	mvdx6, [r1, #-456]!	@ 0xfffffe38
+   10548:	545f5449 	ldrbpl	r5, [pc], #-1097	@ 10550 <__abi_tag+0x3bc>
+   1054c:	53455f30 	movtpl	r5, #24368	@ 0x5f30
+   10550:	4b525f37 	blmi	14a8234 <__bss_end__+0x1495080>
+   10554:	3774534e 	ldrbcc	r5, [r4, -lr, asr #6]!
+   10558:	78635f5f 	stmdavc	r3!, {r0, r1, r2, r3, r4, r6, r8, r9, sl, fp, ip, lr}^
+   1055c:	31313178 	teqcc	r1, r8, ror r1
+   10560:	73616232 	cmnvc	r1, #536870915	@ 0x20000003
+   10564:	735f6369 	cmpvc	pc, #-1543503871	@ 0xa4000001
+   10568:	6e697274 	mcrvs	2, 3, r7, cr9, cr4, {3}
+   1056c:	34534967 	ldrbcc	r4, [r3], #-2407	@ 0xfffff699
+   10570:	5f35535f 	svcpl	0x0035535f
+   10574:	455f3154 	ldrbmi	r3, [pc, #-340]	@ 10428 <__abi_tag+0x294>
+   10578:	5a5f0045 	bpl	17d0694 <__bss_end__+0x17bd4e0>
+   1057c:	3874534e 	ldmdacc	r4!, {r1, r2, r3, r6, r8, r9, ip, lr}^
+   10580:	5f736f69 	svcpl	0x00736f69
+   10584:	65736162 	ldrbvs	r6, [r3, #-354]!	@ 0xfffffe9e
+   10588:	696e4934 	stmdbvs	lr!, {r2, r4, r5, r8, fp, lr}^
+   1058c:	45314474 	ldrmi	r4, [r1, #-1140]!	@ 0xfffffb8c
+   10590:	5a5f0076 	bpl	17d0770 <__bss_end__+0x17bd5bc>
+   10594:	67377453 			@ <UNDEFINED> instruction: 0x67377453
+   10598:	696c7465 	stmdbvs	ip!, {r0, r2, r5, r6, sl, ip, sp, lr}^
+   1059c:	6349656e 	movtvs	r6, #38254	@ 0x956e
+   105a0:	31317453 	teqcc	r1, r3, asr r4
+   105a4:	72616863 	rsbvc	r6, r1, #6488064	@ 0x630000
+   105a8:	6172745f 	cmnvs	r2, pc, asr r4
+   105ac:	49737469 	ldmdbmi	r3!, {r0, r3, r5, r6, sl, ip, sp, lr}^
+   105b0:	61534563 	cmpvs	r3, r3, ror #10
+   105b4:	45456349 	strbmi	r6, [r5, #-841]	@ 0xfffffcb7
+   105b8:	31745352 	cmncc	r4, r2, asr r3
+   105bc:	73616233 	cmnvc	r1, #805306371	@ 0x30000003
+   105c0:	695f6369 	ldmdbvs	pc, {r0, r3, r5, r6, r8, r9, sp, lr}^	@ <UNPREDICTABLE>
+   105c4:	65727473 	ldrbvs	r7, [r2, #-1139]!	@ 0xfffffb8d
+   105c8:	54496d61 	strbpl	r6, [r9], #-3425	@ 0xfffff29f
+   105cc:	5f30545f 	svcpl	0x0030545f
+   105d0:	5f375345 	svcpl	0x00375345
+   105d4:	74534e52 	ldrbvc	r4, [r3], #-3666	@ 0xfffff1ae
+   105d8:	635f5f37 	cmpvs	pc, #55, 30	@ 0xdc
+   105dc:	31317878 	teqcc	r1, r8, ror r8
+   105e0:	61623231 	cmnvs	r2, r1, lsr r2
+   105e4:	5f636973 	svcpl	0x00636973
+   105e8:	69727473 	ldmdbvs	r2!, {r0, r1, r4, r5, r6, sl, ip, sp, lr}^
+   105ec:	5349676e 	movtpl	r6, #38766	@ 0x976e
+   105f0:	35535f34 	ldrbcc	r5, [r3, #-3892]	@ 0xfffff0cc
+   105f4:	5f31545f 	svcpl	0x0031545f
+   105f8:	5f004545 	svcpl	0x00004545
+   105fc:	7878675f 	ldmdavc	r8!, {r0, r1, r2, r3, r4, r6, r8, r9, sl, sp, lr}^
+   10600:	7265705f 	rsbvc	r7, r5, #95	@ 0x5f
+   10604:	616e6f73 	smcvs	59123	@ 0xe6f3
+   10608:	7974696c 	ldmdbvc	r4!, {r2, r3, r5, r6, r8, fp, sp, lr}^
+   1060c:	0030765f 	eorseq	r7, r0, pc, asr r6
+   10610:	534e5a5f 	movtpl	r5, #59999	@ 0xea5f
+   10614:	7570336f 	ldrbvc	r3, [r0, #-879]!	@ 0xfffffc91
+   10618:	00634574 	rsbeq	r4, r3, r4, ror r5
+   1061c:	78635f5f 	stmdavc	r3!, {r0, r1, r2, r3, r4, r6, r8, r9, sl, fp, ip, lr}^
+   10620:	65625f61 	strbvs	r5, [r2, #-3937]!	@ 0xfffff09f
+   10624:	5f6e6967 	svcpl	0x006e6967
+   10628:	63746163 	cmnvs	r4, #-1073741800	@ 0xc0000018
+   1062c:	5a5f0068 	bpl	17d07d4 <__bss_end__+0x17bd620>
+   10630:	30327453 	eorscc	r7, r2, r3, asr r4
+   10634:	68745f5f 	ldmdavs	r4!, {r0, r1, r2, r3, r4, r6, r8, r9, sl, fp, ip, lr}^
+   10638:	5f776f72 	svcpl	0x00776f72
+   1063c:	676e656c 	strbvs	r6, [lr, -ip, ror #10]!
+   10640:	655f6874 	ldrbvs	r6, [pc, #-2164]	@ fdd4 <__abi_tag-0x3c0>
+   10644:	726f7272 	rsbvc	r7, pc, #536870919	@ 0x20000007
+   10648:	00634b50 	rsbeq	r4, r3, r0, asr fp
+   1064c:	74535a5f 	ldrbvc	r5, [r3], #-2655	@ 0xfffff5a1
+   10650:	5f5f3631 	svcpl	0x005f3631
+   10654:	7274736f 	rsbsvc	r7, r4, #-1140850687	@ 0xbc000001
+   10658:	5f6d6165 	svcpl	0x006d6165
+   1065c:	65736e69 	ldrbvs	r6, [r3, #-3689]!	@ 0xfffff197
+   10660:	63497472 	movtvs	r7, #38002	@ 0x9472
+   10664:	31317453 	teqcc	r1, r3, asr r4
+   10668:	72616863 	rsbvc	r6, r1, #6488064	@ 0x630000
+   1066c:	6172745f 	cmnvs	r2, pc, asr r4
+   10670:	49737469 	ldmdbmi	r3!, {r0, r3, r5, r6, sl, ip, sp, lr}^
+   10674:	52454563 	subpl	r4, r5, #415236096	@ 0x18c00000
+   10678:	33317453 	teqcc	r1, #1392508928	@ 0x53000000
+   1067c:	69736162 	ldmdbvs	r3!, {r1, r5, r6, r8, sp, lr}^
+   10680:	736f5f63 	cmnvc	pc, #396	@ 0x18c
+   10684:	61657274 	smcvs	22308	@ 0x5724
+   10688:	5f54496d 	svcpl	0x0054496d
+   1068c:	455f3054 	ldrbmi	r3, [pc, #-84]	@ 10640 <__abi_tag+0x4ac>
+   10690:	505f3653 	subspl	r3, pc, r3, asr r6	@ <UNPREDICTABLE>
+   10694:	5f33534b 	svcpl	0x0033534b
+   10698:	5f5f0069 	svcpl	0x005f0069
+   1069c:	5f617863 	svcpl	0x00617863
+   106a0:	5f646e65 	svcpl	0x00646e65
+   106a4:	63746163 	cmnvs	r4, #-1073741800	@ 0xc0000018
+   106a8:	5a5f0068 	bpl	17d0850 <__bss_end__+0x17bd69c>
+   106ac:	76506c64 	ldrbvc	r6, [r0], -r4, ror #24
+   106b0:	5a5f006a 	bpl	17d0860 <__bss_end__+0x17bd6ac>
+   106b4:	3874534e 	ldmdacc	r4!, {r1, r2, r3, r6, r8, r9, ip, lr}^
+   106b8:	5f736f69 	svcpl	0x00736f69
+   106bc:	65736162 	ldrbvs	r6, [r3, #-354]!	@ 0xfffffe9e
+   106c0:	696e4934 	stmdbvs	lr!, {r2, r4, r5, r8, fp, lr}^
+   106c4:	45314374 	ldrmi	r4, [r1, #-884]!	@ 0xfffffc8c
+   106c8:	5a5f0076 	bpl	17d08a8 <__bss_end__+0x17bd6f4>
+   106cc:	006a776e 	rsbeq	r7, sl, lr, ror #14
+   106d0:	74535a5f 	ldrbvc	r5, [r3], #-2655	@ 0xfffff5a1
+   106d4:	6e696333 	mcrvs	3, 3, r6, cr9, cr3, {1}
+   106d8:	635f5f00 	cmpvs	pc, #0, 30
+   106dc:	725f6178 	subsvc	r6, pc, #120, 2
+   106e0:	72687465 	rsbvc	r7, r8, #1694498816	@ 0x65000000
+   106e4:	5f00776f 	svcpl	0x0000776f
+   106e8:	6165615f 	cmnvs	r5, pc, asr r1
+   106ec:	615f6962 	cmpvs	pc, r2, ror #18
+   106f0:	69786574 	ldmdbvs	r8!, {r2, r4, r5, r6, r8, sl, sp, lr}^
+   106f4:	5f5f0074 	svcpl	0x005f0074
+   106f8:	5f617863 	svcpl	0x00617863
+   106fc:	5f646e65 	svcpl	0x00646e65
+   10700:	61656c63 	cmnvs	r5, r3, ror #24
+   10704:	0070756e 	rsbseq	r7, r0, lr, ror #10
+   10708:	534e5a5f 	movtpl	r5, #59999	@ 0xea5f
+   1070c:	5f5f3774 	svcpl	0x005f3774
+   10710:	31787863 	cmncc	r8, r3, ror #16
+   10714:	62323131 	eorsvs	r3, r2, #1073741836	@ 0x4000000c
+   10718:	63697361 	cmnvs	r9, #-2080374783	@ 0x84000001
+   1071c:	7274735f 	rsbsvc	r7, r4, #2080374785	@ 0x7c000001
+   10720:	49676e69 	stmdbmi	r7!, {r0, r3, r5, r6, r9, sl, fp, sp, lr}^
+   10724:	31745363 	cmncc	r4, r3, ror #6
+   10728:	61686331 	cmnvs	r8, r1, lsr r3
+   1072c:	72745f72 	rsbsvc	r5, r4, #456	@ 0x1c8
+   10730:	73746961 	cmnvc	r4, #1589248	@ 0x184000
+   10734:	53456349 	movtpl	r6, #21321	@ 0x5349
+   10738:	45634961 	strbmi	r4, [r3, #-2401]!	@ 0xfffff69f
+   1073c:	4d5f3945 	vldrmi.16	s7, [pc, #-138]	@ 106ba <__abi_tag+0x526>	@ <UNPREDICTABLE>
+   10740:	6572635f 	ldrbvs	r6, [r2, #-863]!	@ 0xfffffca1
+   10744:	45657461 	strbmi	r7, [r5, #-1121]!	@ 0xfffffb9f
+   10748:	006a6a52 	rsbeq	r6, sl, r2, asr sl
+   1074c:	534e5a5f 	movtpl	r5, #59999	@ 0xea5f
+   10750:	5f5f3774 	svcpl	0x005f3774
+   10754:	31787863 	cmncc	r8, r3, ror #16
+   10758:	62323131 	eorsvs	r3, r2, #1073741836	@ 0x4000000c
+   1075c:	63697361 	cmnvs	r9, #-2080374783	@ 0x84000001
+   10760:	7274735f 	rsbsvc	r7, r4, #2080374785	@ 0x7c000001
+   10764:	49676e69 	stmdbmi	r7!, {r0, r3, r5, r6, r9, sl, fp, sp, lr}^
+   10768:	31745363 	cmncc	r4, r3, ror #6
+   1076c:	61686331 	cmnvs	r8, r1, lsr r3
+   10770:	72745f72 	rsbsvc	r5, r4, #456	@ 0x1c8
+   10774:	73746961 	cmnvc	r4, #1589248	@ 0x184000
+   10778:	53456349 	movtpl	r6, #21321	@ 0x5349
+   1077c:	45634961 	strbmi	r4, [r3, #-2401]!	@ 0xfffff69f
+   10780:	5f303145 	svcpl	0x00303145
+   10784:	69645f4d 	stmdbvs	r4!, {r0, r2, r3, r6, r8, r9, sl, fp, ip, lr}^
+   10788:	736f7073 	cmnvc	pc, #115	@ 0x73
+   1078c:	00764565 	rsbseq	r4, r6, r5, ror #10
+   10790:	534e5a5f 	movtpl	r5, #59999	@ 0xea5f
+   10794:	5f5f3774 	svcpl	0x005f3774
+   10798:	31787863 	cmncc	r8, r3, ror #16
+   1079c:	62323131 	eorsvs	r3, r2, #1073741836	@ 0x4000000c
+   107a0:	63697361 	cmnvs	r9, #-2080374783	@ 0x84000001
+   107a4:	7274735f 	rsbsvc	r7, r4, #2080374785	@ 0x7c000001
+   107a8:	49676e69 	stmdbmi	r7!, {r0, r3, r5, r6, r9, sl, fp, sp, lr}^
+   107ac:	31745363 	cmncc	r4, r3, ror #6
+   107b0:	61686331 	cmnvs	r8, r1, lsr r3
+   107b4:	72745f72 	rsbsvc	r5, r4, #456	@ 0x1c8
+   107b8:	73746961 	cmnvc	r4, #1589248	@ 0x184000
+   107bc:	53456349 	movtpl	r6, #21321	@ 0x5349
+   107c0:	45634961 	strbmi	r4, [r3, #-2401]!	@ 0xfffff69f
+   107c4:	5f333145 	svcpl	0x00333145
+   107c8:	6f635f53 	svcvs	0x00635f53
+   107cc:	635f7970 	cmpvs	pc, #112, 18	@ 0x1c0000
+   107d0:	73726168 	cmnvc	r2, #104, 2
+   107d4:	53635045 	cmnpl	r3, #69	@ 0x45
+   107d8:	35535f35 	ldrbcc	r5, [r3, #-3893]	@ 0xfffff0cb
+   107dc:	5a5f005f 	bpl	17d0960 <__bss_end__+0x17bd7ac>
+   107e0:	63347453 	teqvs	r4, #1392508928	@ 0x53000000
+   107e4:	0074756f 	rsbseq	r7, r4, pc, ror #10
+   107e8:	65615f5f 	strbvs	r5, [r1, #-3935]!	@ 0xfffff0a1
+   107ec:	5f696261 	svcpl	0x00696261
+   107f0:	69776e75 	ldmdbvs	r7!, {r0, r2, r4, r5, r6, r9, sl, fp, sp, lr}^
+   107f4:	635f646e 	cmpvs	pc, #1845493760	@ 0x6e000000
+   107f8:	705f7070 	subsvc	r7, pc, r0, ror r0	@ <UNPREDICTABLE>
+   107fc:	65003072 	strvs	r3, [r0, #-114]	@ 0xffffff8e
+   10800:	6c636578 	cfstr64vs	mvdx6, [r3], #-480	@ 0xfffffe20
+   10804:	74730070 	ldrbtvc	r0, [r3], #-112	@ 0xffffff90
+   10808:	70756472 	rsbsvc	r6, r5, r2, ror r4
+   1080c:	726f6600 	rsbvc	r6, pc, #0, 12
+   10810:	7564006b 	strbvc	r0, [r4, #-107]!	@ 0xffffff95
+   10814:	5f003270 	svcpl	0x00003270
+   10818:	62696c5f 	rsbvs	r6, r9, #24320	@ 0x5f00
+   1081c:	74735f63 	ldrbtvc	r5, [r3], #-3939	@ 0xfffff09d
+   10820:	5f747261 	svcpl	0x00747261
+   10824:	6e69616d 	powvsez	f6, f1, #5.0
+   10828:	6d656d00 	stclvs	13, cr6, [r5, #-0]
+   1082c:	00746573 	rsbseq	r6, r4, r3, ror r5
+   10830:	736f6c63 	cmnvc	pc, #25344	@ 0x6300
+   10834:	656d0065 	strbvs	r0, [sp, #-101]!	@ 0xffffff9b
+   10838:	7970636d 	ldmdbvc	r0!, {r0, r2, r3, r5, r6, r8, r9, sp, lr}^
+   1083c:	6f626100 	svcvs	0x00626100
+   10840:	70007472 	andvc	r7, r0, r2, ror r4
+   10844:	00657069 	rsbeq	r7, r5, r9, rrx
+   10848:	7362696c 	cmnvc	r2, #108, 18	@ 0x1b0000
+   1084c:	2b636474 	blcs	18e9a24 <__bss_end__+0x18d6870>
+   10850:	6f732e2b 	svcvs	0x00732e2b
+   10854:	6c00362e 	stcvs	6, cr3, [r0], {46}	@ 0x2e
+   10858:	63676269 	cmnvs	r7, #-1879048186	@ 0x90000006
+   1085c:	2e735f63 	cdpcs	15, 7, cr5, cr3, cr3, {3}
+   10860:	312e6f73 			@ <UNDEFINED> instruction: 0x312e6f73
+   10864:	62696c00 	rsbvs	r6, r9, #0, 24
+   10868:	6f732e63 	svcvs	0x00732e63
+   1086c:	4700362e 	strmi	r3, [r0, -lr, lsr #12]
+   10870:	335f4343 	cmpcc	pc, #201326593	@ 0xc000001
+   10874:	4700352e 	strmi	r3, [r0, -lr, lsr #10]
+   10878:	4342494c 	movtmi	r4, #10572	@ 0x294c
+   1087c:	332e325f 			@ <UNDEFINED> instruction: 0x332e325f
+   10880:	4c470034 	mcrrmi	0, 3, r0, r7, cr4
+   10884:	5f434249 	svcpl	0x00434249
+   10888:	00342e32 	eorseq	r2, r4, r2, lsr lr
+   1088c:	42494c47 	submi	r4, r9, #18176	@ 0x4700
+   10890:	5f585843 	svcpl	0x00585843
+   10894:	2e342e33 	mrccs	14, 1, r2, cr4, cr3, {1}
+   10898:	58430039 	stmdapl	r3, {r0, r3, r4, r5}^
+   1089c:	49424158 	stmdbmi	r2, {r3, r4, r6, r8, lr}^
+   108a0:	332e315f 			@ <UNDEFINED> instruction: 0x332e315f
+   108a4:	4300392e 	movwmi	r3, #2350	@ 0x92e
+   108a8:	42415858 	submi	r5, r1, #88, 16	@ 0x580000
+   108ac:	2e315f49 	cdpcs	15, 3, cr5, cr1, cr9, {2}
+   108b0:	4c470033 	mcrrmi	0, 3, r0, r7, cr3
+   108b4:	58434249 	stmdapl	r3, {r0, r3, r6, r9, lr}^
+   108b8:	2e335f58 	mrccs	15, 1, r5, cr3, cr8, {2}
+   108bc:	31322e34 	teqcc	r2, r4, lsr lr
+   108c0:	58584300 	ldmdapl	r8, {r8, r9, lr}^
+   108c4:	5f494241 	svcpl	0x00494241
+   108c8:	5f4d5241 	svcpl	0x004d5241
+   108cc:	2e332e31 	mrccs	14, 1, r2, cr3, cr1, {1}
+   108d0:	4c470033 	mcrrmi	0, 3, r0, r7, cr3
+   108d4:	58434249 	stmdapl	r3, {r0, r3, r6, r9, lr}^
+   108d8:	2e335f58 	mrccs	15, 1, r5, cr3, cr8, {2}
+   108dc:	Address 0x108dc is out of bounds.
+
+
+Disassembly of section .gnu.version:
+
+000108de <.gnu.version>:
+   108de:	00010000 	andeq	r0, r1, r0
+   108e2:	0001000a 	andeq	r0, r1, sl
+   108e6:	00040001 	andeq	r0, r4, r1
+   108ea:	00020005 	andeq	r0, r2, r5
+   108ee:	00040006 	andeq	r0, r4, r6
+   108f2:	00040002 	andeq	r0, r4, r2
+   108f6:	00040006 	andeq	r0, r4, r6
+   108fa:	00020006 	andeq	r0, r2, r6
+   108fe:	00050008 	andeq	r0, r5, r8
+   10902:	00030005 	andeq	r0, r3, r5
+   10906:	00020006 	andeq	r0, r2, r6
+   1090a:	00020009 	andeq	r0, r2, r9
+   1090e:	00040002 	andeq	r0, r4, r2
+   10912:	00060006 	andeq	r0, r6, r6
+   10916:	00070005 	andeq	r0, r7, r5
+   1091a:	00020006 	andeq	r0, r2, r6
+   1091e:	00060006 	andeq	r0, r6, r6
+   10922:	Address 0x10922 is out of bounds.
+
+
+Disassembly of section .gnu.version_r:
+
+00010924 <.gnu.version_r>:
+   10924:	00010001 	andeq	r0, r1, r1
+   10928:	00000387 	andeq	r0, r0, r7, lsl #7
+   1092c:	00000010 	andeq	r0, r0, r0, lsl r0
+   10930:	00000020 	andeq	r0, r0, r0, lsr #32
+   10934:	0b792655 	bleq	1e5a290 <__bss_end__+0x1e470dc>
+   10938:	000a0000 	andeq	r0, sl, r0
+   1093c:	0000039f 	muleq	r0, pc, r3	@ <UNPREDICTABLE>
+   10940:	00000000 	andeq	r0, r0, r0
+   10944:	00020001 	andeq	r0, r2, r1
+   10948:	00000395 	muleq	r0, r5, r3
+   1094c:	00000010 	andeq	r0, r0, r0, lsl r0
+   10950:	00000030 	andeq	r0, r0, r0, lsr r0
+   10954:	069691b4 			@ <UNDEFINED> instruction: 0x069691b4
+   10958:	00080000 	andeq	r0, r8, r0
+   1095c:	000003a7 	andeq	r0, r0, r7, lsr #7
+   10960:	00000010 	andeq	r0, r0, r0, lsl r0
+   10964:	0d696914 			@ <UNDEFINED> instruction: 0x0d696914
+   10968:	00060000 	andeq	r0, r6, r0
+   1096c:	000003b2 			@ <UNDEFINED> instruction: 0x000003b2
+   10970:	00000000 	andeq	r0, r0, r0
+   10974:	00060001 	andeq	r0, r6, r1
+   10978:	00000378 	andeq	r0, r0, r8, ror r3
+   1097c:	00000010 	andeq	r0, r0, r0, lsl r0
+   10980:	00000000 	andeq	r0, r0, r0
+   10984:	02297f89 	eoreq	r7, r9, #548	@ 0x224
+   10988:	00090000 	andeq	r0, r9, r0
+   1098c:	000003bc 			@ <UNDEFINED> instruction: 0x000003bc
+   10990:	00000010 	andeq	r0, r0, r0, lsl r0
+   10994:	0bafd179 	bleq	fec04f80 <__bss_end__+0xfebf1dcc>
+   10998:	00070000 	andeq	r0, r7, r0
+   1099c:	000003ca 	andeq	r0, r0, sl, asr #7
+   109a0:	00000010 	andeq	r0, r0, r0, lsl r0
+   109a4:	056bafd3 	strbeq	sl, [fp, #-4051]!	@ 0xfffff02d
+   109a8:	00050000 	andeq	r0, r5, r0
+   109ac:	000003d7 	ldrdeq	r0, [r0], -r7
+   109b0:	00000010 	andeq	r0, r0, r0, lsl r0
+   109b4:	0297f871 	addseq	pc, r7, #7405568	@ 0x710000
+   109b8:	00040000 	andeq	r0, r4, r0
+   109bc:	000003e2 	andeq	r0, r0, r2, ror #7
+   109c0:	00000010 	andeq	r0, r0, r0, lsl r0
+   109c4:	0849afa3 	stmdaeq	r9, {r0, r1, r5, r7, r8, r9, sl, fp, sp, pc}^
+   109c8:	00030000 	andeq	r0, r3, r0
+   109cc:	000003f1 	strdeq	r0, [r0], -r1
+   109d0:	00000010 	andeq	r0, r0, r0, lsl r0
+   109d4:	08922974 	ldmeq	r2, {r2, r4, r5, r6, r8, fp, sp}
+   109d8:	00020000 	andeq	r0, r2, r0
+   109dc:	00000402 	andeq	r0, r0, r2, lsl #8
+   109e0:	00000000 	andeq	r0, r0, r0
+
+Disassembly of section .rel.dyn:
+
+000109e4 <.rel.dyn>:
+   109e4:	00013084 	andeq	r3, r1, r4, lsl #1
+   109e8:	00000315 	andeq	r0, r0, r5, lsl r3
+   109ec:	00013090 	muleq	r1, r0, r0
+   109f0:	00001f14 	andeq	r1, r0, r4, lsl pc
+   109f4:	00013120 	andeq	r3, r1, r0, lsr #2
+   109f8:	00000a14 	andeq	r0, r0, r4, lsl sl
+
+Disassembly of section .rel.plt:
+
+000109fc <.rel.plt>:
+   109fc:	0001300c 	andeq	r3, r1, ip
+   10a00:	00000f16 	andeq	r0, r0, r6, lsl pc
+   10a04:	00013010 	andeq	r3, r1, r0, lsl r0
+   10a08:	00001816 	andeq	r1, r0, r6, lsl r8
+   10a0c:	00013014 	andeq	r3, r1, r4, lsl r0
+   10a10:	00001316 	andeq	r1, r0, r6, lsl r3
+   10a14:	00013018 	andeq	r3, r1, r8, lsl r0
+   10a18:	00000b16 	andeq	r0, r0, r6, lsl fp
+   10a1c:	0001301c 	andeq	r3, r1, ip, lsl r0
+   10a20:	00001916 	andeq	r1, r0, r6, lsl r9
+   10a24:	00013020 	andeq	r3, r1, r0, lsr #32
+   10a28:	00001c16 	andeq	r1, r0, r6, lsl ip
+   10a2c:	00013024 	andeq	r3, r1, r4, lsr #32
+   10a30:	00000716 	andeq	r0, r0, r6, lsl r7
+   10a34:	00013028 	andeq	r3, r1, r8, lsr #32
+   10a38:	00000816 	andeq	r0, r0, r6, lsl r8
+   10a3c:	0001302c 	andeq	r3, r1, ip, lsr #32
+   10a40:	00001d16 	andeq	r1, r0, r6, lsl sp
+   10a44:	00013030 	andeq	r3, r1, r0, lsr r0
+   10a48:	00001016 	andeq	r1, r0, r6, lsl r0
+   10a4c:	00013034 	andeq	r3, r1, r4, lsr r0
+   10a50:	00001e16 	andeq	r1, r0, r6, lsl lr
+   10a54:	00013038 	andeq	r3, r1, r8, lsr r0
+   10a58:	00000c16 	andeq	r0, r0, r6, lsl ip
+   10a5c:	0001303c 	andeq	r3, r1, ip, lsr r0
+   10a60:	00000916 	andeq	r0, r0, r6, lsl r9
+   10a64:	00013040 	andeq	r3, r1, r0, asr #32
+   10a68:	00002116 	andeq	r2, r0, r6, lsl r1
+   10a6c:	00013044 	andeq	r3, r1, r4, asr #32
+   10a70:	00001116 	andeq	r1, r0, r6, lsl r1
+   10a74:	00013048 	andeq	r3, r1, r8, asr #32
+   10a78:	00001a16 	andeq	r1, r0, r6, lsl sl
+   10a7c:	0001304c 	andeq	r3, r1, ip, asr #32
+   10a80:	00000516 	andeq	r0, r0, r6, lsl r5
+   10a84:	00013050 	andeq	r3, r1, r0, asr r0
+   10a88:	00001616 	andeq	r1, r0, r6, lsl r6
+   10a8c:	00013054 	andeq	r3, r1, r4, asr r0
+   10a90:	00001b16 	andeq	r1, r0, r6, lsl fp
+   10a94:	00013058 	andeq	r3, r1, r8, asr r0
+   10a98:	00002216 	andeq	r2, r0, r6, lsl r2
+   10a9c:	0001305c 	andeq	r3, r1, ip, asr r0
+   10aa0:	00002016 	andeq	r2, r0, r6, lsl r0
+   10aa4:	00013060 	andeq	r3, r1, r0, rrx
+   10aa8:	00001716 	andeq	r1, r0, r6, lsl r7
+   10aac:	00013064 	andeq	r3, r1, r4, rrx
+   10ab0:	00000616 	andeq	r0, r0, r6, lsl r6
+   10ab4:	00013068 	andeq	r3, r1, r8, rrx
+   10ab8:	00001216 	andeq	r1, r0, r6, lsl r2
+   10abc:	0001306c 	andeq	r3, r1, ip, rrx
+   10ac0:	00000d16 	andeq	r0, r0, r6, lsl sp
+   10ac4:	00013070 	andeq	r3, r1, r0, ror r0
+   10ac8:	00000316 	andeq	r0, r0, r6, lsl r3
+   10acc:	00013074 	andeq	r3, r1, r4, ror r0
+   10ad0:	00000e16 	andeq	r0, r0, r6, lsl lr
+   10ad4:	00013078 	andeq	r3, r1, r8, ror r0
+   10ad8:	00001416 	andeq	r1, r0, r6, lsl r4
+   10adc:	0001307c 	andeq	r3, r1, ip, ror r0
+   10ae0:	00001516 	andeq	r1, r0, r6, lsl r5
+
+Disassembly of section .init:
+
+00010ae4 <_init>:
+   10ae4:	e92d4008 	push	{r3, lr}
+   10ae8:	eb0000b7 	bl	10dcc <call_weak_fn>
+   10aec:	e8bd8008 	pop	{r3, pc}
+
+Disassembly of section .plt:
+
+00010af0 <.plt>:
+   10af0:	e52de004 	push	{lr}		@ (str lr, [sp, #-4]!)
+   10af4:	e59fe004 	ldr	lr, [pc, #4]	@ 10b00 <.plt+0x10>
+   10af8:	e08fe00e 	add	lr, pc, lr
+   10afc:	e5bef008 	ldr	pc, [lr, #8]!
+   10b00:	00002500 	andeq	r2, r0, r0, lsl #10
+
+00010b04 <std::basic_ostream<char, std::char_traits<char> >::put(char)@plt>:
+   10b04:	e28fc600 	add	ip, pc, #0, 12
+   10b08:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b0c:	e5bcf500 	ldr	pc, [ip, #1280]!	@ 0x500
+
+00010b10 <operator new(unsigned int)@plt>:
+   10b10:	e28fc600 	add	ip, pc, #0, 12
+   10b14:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b18:	e5bcf4f8 	ldr	pc, [ip, #1272]!	@ 0x4f8
+
+00010b1c <__aeabi_atexit@plt>:
+   10b1c:	e28fc600 	add	ip, pc, #0, 12
+   10b20:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b24:	e5bcf4f0 	ldr	pc, [ip, #1264]!	@ 0x4f0
+
+00010b28 <std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)@plt>:
+   10b28:	e28fc600 	add	ip, pc, #0, 12
+   10b2c:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b30:	e5bcf4e8 	ldr	pc, [ip, #1256]!	@ 0x4e8
+
+00010b34 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_copy_chars(char*, char*, char*)@plt>:
+   10b34:	e28fc600 	add	ip, pc, #0, 12
+   10b38:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b3c:	e5bcf4e0 	ldr	pc, [ip, #1248]!	@ 0x4e0
+
+00010b40 <__cxa_begin_catch@plt>:
+   10b40:	e28fc600 	add	ip, pc, #0, 12
+   10b44:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b48:	e5bcf4d8 	ldr	pc, [ip, #1240]!	@ 0x4d8
+
+00010b4c <std::__throw_length_error(char const*)@plt>:
+   10b4c:	e28fc600 	add	ip, pc, #0, 12
+   10b50:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b54:	e5bcf4d0 	ldr	pc, [ip, #1232]!	@ 0x4d0
+
+00010b58 <memset@plt>:
+   10b58:	e28fc600 	add	ip, pc, #0, 12
+   10b5c:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b60:	e5bcf4c8 	ldr	pc, [ip, #1224]!	@ 0x4c8
+
+00010b64 <operator delete(void*, unsigned int)@plt>:
+   10b64:	e28fc600 	add	ip, pc, #0, 12
+   10b68:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b6c:	e5bcf4c0 	ldr	pc, [ip, #1216]!	@ 0x4c0
+
+00010b70 <__libc_start_main@plt>:
+   10b70:	e28fc600 	add	ip, pc, #0, 12
+   10b74:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b78:	e5bcf4b8 	ldr	pc, [ip, #1208]!	@ 0x4b8
+
+00010b7c <close@plt>:
+   10b7c:	e28fc600 	add	ip, pc, #0, 12
+   10b80:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b84:	e5bcf4b0 	ldr	pc, [ip, #1200]!	@ 0x4b0
+
+00010b88 <abort@plt>:
+   10b88:	e28fc600 	add	ip, pc, #0, 12
+   10b8c:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b90:	e5bcf4a8 	ldr	pc, [ip, #1192]!	@ 0x4a8
+
+00010b94 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>:
+   10b94:	e28fc600 	add	ip, pc, #0, 12
+   10b98:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10b9c:	e5bcf4a0 	ldr	pc, [ip, #1184]!	@ 0x4a0
+
+00010ba0 <dup2@plt>:
+   10ba0:	e28fc600 	add	ip, pc, #0, 12
+   10ba4:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10ba8:	e5bcf498 	ldr	pc, [ip, #1176]!	@ 0x498
+
+00010bac <__cxa_end_cleanup@plt>:
+   10bac:	e28fc600 	add	ip, pc, #0, 12
+   10bb0:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10bb4:	e5bcf490 	ldr	pc, [ip, #1168]!	@ 0x490
+
+00010bb8 <fork@plt>:
+   10bb8:	e28fc600 	add	ip, pc, #0, 12
+   10bbc:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10bc0:	e5bcf488 	ldr	pc, [ip, #1160]!	@ 0x488
+
+00010bc4 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()@plt>:
+   10bc4:	e28fc600 	add	ip, pc, #0, 12
+   10bc8:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10bcc:	e5bcf480 	ldr	pc, [ip, #1152]!	@ 0x480
+
+00010bd0 <std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)@plt>:
+   10bd0:	e28fc600 	add	ip, pc, #0, 12
+   10bd4:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10bd8:	e5bcf478 	ldr	pc, [ip, #1144]!	@ 0x478
+
+00010bdc <execlp@plt>:
+   10bdc:	e28fc600 	add	ip, pc, #0, 12
+   10be0:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10be4:	e5bcf470 	ldr	pc, [ip, #1136]!	@ 0x470
+
+00010be8 <__cxa_rethrow@plt>:
+   10be8:	e28fc600 	add	ip, pc, #0, 12
+   10bec:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10bf0:	e5bcf468 	ldr	pc, [ip, #1128]!	@ 0x468
+
+00010bf4 <memcpy@plt>:
+   10bf4:	e28fc600 	add	ip, pc, #0, 12
+   10bf8:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10bfc:	e5bcf460 	ldr	pc, [ip, #1120]!	@ 0x460
+
+00010c00 <std::ios_base::Init::Init()@plt>:
+   10c00:	e28fc600 	add	ip, pc, #0, 12
+   10c04:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10c08:	e5bcf458 	ldr	pc, [ip, #1112]!	@ 0x458
+
+00010c0c <__cxa_end_catch@plt>:
+   10c0c:	e28fc600 	add	ip, pc, #0, 12
+   10c10:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10c14:	e5bcf450 	ldr	pc, [ip, #1104]!	@ 0x450
+
+00010c18 <__gxx_personality_v0@plt>:
+   10c18:	e28fc600 	add	ip, pc, #0, 12
+   10c1c:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10c20:	e5bcf448 	ldr	pc, [ip, #1096]!	@ 0x448
+
+00010c24 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned int&, unsigned int)@plt>:
+   10c24:	e28fc600 	add	ip, pc, #0, 12
+   10c28:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10c2c:	e5bcf440 	ldr	pc, [ip, #1088]!	@ 0x440
+
+00010c30 <__gmon_start__@plt>:
+   10c30:	e28fc600 	add	ip, pc, #0, 12
+   10c34:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10c38:	e5bcf438 	ldr	pc, [ip, #1080]!	@ 0x438
+
+00010c3c <strdup@plt>:
+   10c3c:	e28fc600 	add	ip, pc, #0, 12
+   10c40:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10c44:	e5bcf430 	ldr	pc, [ip, #1072]!	@ 0x430
+
+00010c48 <pipe@plt>:
+   10c48:	e28fc600 	add	ip, pc, #0, 12
+   10c4c:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10c50:	e5bcf428 	ldr	pc, [ip, #1064]!	@ 0x428
+
+00010c54 <std::ios_base::Init::~Init()@plt>:
+   10c54:	e28fc600 	add	ip, pc, #0, 12
+   10c58:	e28cca02 	add	ip, ip, #8192	@ 0x2000
+   10c5c:	e5bcf420 	ldr	pc, [ip, #1056]!	@ 0x420
+
+Disassembly of section .text:
+
+00010c60 <main>:
+   10c60:	e92d47f0 	push	{r4, r5, r6, r7, r8, r9, sl, lr}
+   10c64:	e24dd018 	sub	sp, sp, #24
+   10c68:	e28d0010 	add	r0, sp, #16
+   10c6c:	ebfffff5 	bl	10c48 <pipe@plt>
+   10c70:	ebffffd0 	bl	10bb8 <fork@plt>
+   10c74:	e2504000 	subs	r4, r0, #0
+   10c78:	ba000027 	blt	10d1c <main+0xbc>
+   10c7c:	1a000029 	bne	10d28 <main+0xc8>
+   10c80:	e59d0010 	ldr	r0, [sp, #16]
+   10c84:	ebffffbc 	bl	10b7c <close@plt>
+   10c88:	e3a00001 	mov	r0, #1
+   10c8c:	ebffffba 	bl	10b7c <close@plt>
+   10c90:	e3a01001 	mov	r1, #1
+   10c94:	e59d0014 	ldr	r0, [sp, #20]
+   10c98:	ebffffc0 	bl	10ba0 <dup2@plt>
+   10c9c:	e59d0014 	ldr	r0, [sp, #20]
+   10ca0:	ebffffb5 	bl	10b7c <close@plt>
+   10ca4:	e3a00002 	mov	r0, #2
+   10ca8:	ebffffb3 	bl	10b7c <close@plt>
+   10cac:	e1a00004 	mov	r0, r4
+   10cb0:	eb00008d 	bl	10eec <val(int)>
+   10cb4:	e1a05000 	mov	r5, r0
+   10cb8:	e1a00004 	mov	r0, r4
+   10cbc:	eb00008a 	bl	10eec <val(int)>
+   10cc0:	e1a06000 	mov	r6, r0
+   10cc4:	e3a00001 	mov	r0, #1
+   10cc8:	eb000087 	bl	10eec <val(int)>
+   10ccc:	e1a07000 	mov	r7, r0
+   10cd0:	e3a00002 	mov	r0, #2
+   10cd4:	eb000084 	bl	10eec <val(int)>
+   10cd8:	e1a08000 	mov	r8, r0
+   10cdc:	e3a00003 	mov	r0, #3
+   10ce0:	eb000081 	bl	10eec <val(int)>
+   10ce4:	e1a09000 	mov	r9, r0
+   10ce8:	e3a00004 	mov	r0, #4
+   10cec:	eb00007e 	bl	10eec <val(int)>
+   10cf0:	e1a0a000 	mov	sl, r0
+   10cf4:	e3a00005 	mov	r0, #5
+   10cf8:	eb00007b 	bl	10eec <val(int)>
+   10cfc:	e1a03008 	mov	r3, r8
+   10d00:	e1a02007 	mov	r2, r7
+   10d04:	e1a01006 	mov	r1, r6
+   10d08:	e58d400c 	str	r4, [sp, #12]
+   10d0c:	e88d0600 	stm	sp, {r9, sl}
+   10d10:	e58d0008 	str	r0, [sp, #8]
+   10d14:	e1a00005 	mov	r0, r5
+   10d18:	ebffffaf 	bl	10bdc <execlp@plt>
+   10d1c:	e3a00001 	mov	r0, #1
+   10d20:	e28dd018 	add	sp, sp, #24
+   10d24:	e8bd87f0 	pop	{r4, r5, r6, r7, r8, r9, sl, pc}
+   10d28:	e59d0014 	ldr	r0, [sp, #20]
+   10d2c:	ebffff92 	bl	10b7c <close@plt>
+   10d30:	e3a00000 	mov	r0, #0
+   10d34:	ebffff90 	bl	10b7c <close@plt>
+   10d38:	e3a01000 	mov	r1, #0
+   10d3c:	e59d0010 	ldr	r0, [sp, #16]
+   10d40:	ebffff96 	bl	10ba0 <dup2@plt>
+   10d44:	e59d0010 	ldr	r0, [sp, #16]
+   10d48:	ebffff8b 	bl	10b7c <close@plt>
+   10d4c:	eb0000cb 	bl	11080 <flag()>
+   10d50:	e3a00000 	mov	r0, #0
+   10d54:	eafffff1 	b	10d20 <main+0xc0>
+
+00010d58 <_GLOBAL__sub_I__Z4flagv>:
+   10d58:	e92d4010 	push	{r4, lr}
+   10d5c:	e59f4018 	ldr	r4, [pc, #24]	@ 10d7c <_GLOBAL__sub_I__Z4flagv+0x24>
+   10d60:	e1a00004 	mov	r0, r4
+   10d64:	ebffffa5 	bl	10c00 <std::ios_base::Init::Init()@plt>
+   10d68:	e1a00004 	mov	r0, r4
+   10d6c:	e59f200c 	ldr	r2, [pc, #12]	@ 10d80 <_GLOBAL__sub_I__Z4flagv+0x28>
+   10d70:	e8bd4010 	pop	{r4, lr}
+   10d74:	e59f1008 	ldr	r1, [pc, #8]	@ 10d84 <_GLOBAL__sub_I__Z4flagv+0x2c>
+   10d78:	eaffff67 	b	10b1c <__aeabi_atexit@plt>
+   10d7c:	000131b1 			@ <UNDEFINED> instruction: 0x000131b1
+   10d80:	0001308c 	andeq	r3, r1, ip, lsl #1
+   10d84:	00010c54 	andeq	r0, r1, r4, asr ip
+
+00010d88 <_start>:
+   10d88:	e3a0b000 	mov	fp, #0
+   10d8c:	e3a0e000 	mov	lr, #0
+   10d90:	e49d1004 	pop	{r1}		@ (ldr r1, [sp], #4)
+   10d94:	e1a0200d 	mov	r2, sp
+   10d98:	e52d2004 	push	{r2}		@ (str r2, [sp, #-4]!)
+   10d9c:	e52d0004 	push	{r0}		@ (str r0, [sp, #-4]!)
+   10da0:	e59fa01c 	ldr	sl, [pc, #28]	@ 10dc4 <_start+0x3c>
+   10da4:	e28f3018 	add	r3, pc, #24
+   10da8:	e08aa003 	add	sl, sl, r3
+   10dac:	e3a03000 	mov	r3, #0
+   10db0:	e52d3004 	push	{r3}		@ (str r3, [sp, #-4]!)
+   10db4:	e59f000c 	ldr	r0, [pc, #12]	@ 10dc8 <_start+0x40>
+   10db8:	e79a0000 	ldr	r0, [sl, r0]
+   10dbc:	ebffff6b 	bl	10b70 <__libc_start_main@plt>
+   10dc0:	ebffff70 	bl	10b88 <abort@plt>
+   10dc4:	0000223c 	andeq	r2, r0, ip, lsr r2
+   10dc8:	00000080 	andeq	r0, r0, r0, lsl #1
+
+00010dcc <call_weak_fn>:
+   10dcc:	e59f3014 	ldr	r3, [pc, #20]	@ 10de8 <call_weak_fn+0x1c>
+   10dd0:	e59f2014 	ldr	r2, [pc, #20]	@ 10dec <call_weak_fn+0x20>
+   10dd4:	e08f3003 	add	r3, pc, r3
+   10dd8:	e7932002 	ldr	r2, [r3, r2]
+   10ddc:	e3520000 	cmp	r2, #0
+   10de0:	012fff1e 	bxeq	lr
+   10de4:	eaffff91 	b	10c30 <__gmon_start__@plt>
+   10de8:	00002224 	andeq	r2, r0, r4, lsr #4
+   10dec:	00000084 	andeq	r0, r0, r4, lsl #1
+
+00010df0 <deregister_tm_clones>:
+   10df0:	e59f0018 	ldr	r0, [pc, #24]	@ 10e10 <deregister_tm_clones+0x20>
+   10df4:	e59f3018 	ldr	r3, [pc, #24]	@ 10e14 <deregister_tm_clones+0x24>
+   10df8:	e1530000 	cmp	r3, r0
+   10dfc:	012fff1e 	bxeq	lr
+   10e00:	e59f3010 	ldr	r3, [pc, #16]	@ 10e18 <deregister_tm_clones+0x28>
+   10e04:	e3530000 	cmp	r3, #0
+   10e08:	012fff1e 	bxeq	lr
+   10e0c:	e12fff13 	bx	r3
+   10e10:	00013090 	muleq	r1, r0, r0
+   10e14:	00013090 	muleq	r1, r0, r0
+   10e18:	00000000 	andeq	r0, r0, r0
+
+00010e1c <register_tm_clones>:
+   10e1c:	e59f0024 	ldr	r0, [pc, #36]	@ 10e48 <register_tm_clones+0x2c>
+   10e20:	e59f3024 	ldr	r3, [pc, #36]	@ 10e4c <register_tm_clones+0x30>
+   10e24:	e0433000 	sub	r3, r3, r0
+   10e28:	e1a01fa3 	lsr	r1, r3, #31
+   10e2c:	e0811143 	add	r1, r1, r3, asr #2
+   10e30:	e1b010c1 	asrs	r1, r1, #1
+   10e34:	012fff1e 	bxeq	lr
+   10e38:	e59f3010 	ldr	r3, [pc, #16]	@ 10e50 <register_tm_clones+0x34>
+   10e3c:	e3530000 	cmp	r3, #0
+   10e40:	012fff1e 	bxeq	lr
+   10e44:	e12fff13 	bx	r3
+   10e48:	00013090 	muleq	r1, r0, r0
+   10e4c:	00013090 	muleq	r1, r0, r0
+   10e50:	00000000 	andeq	r0, r0, r0
+
+00010e54 <__do_global_dtors_aux>:
+   10e54:	e92d4010 	push	{r4, lr}
+   10e58:	e59f4018 	ldr	r4, [pc, #24]	@ 10e78 <__do_global_dtors_aux+0x24>
+   10e5c:	e5d43000 	ldrb	r3, [r4]
+   10e60:	e3530000 	cmp	r3, #0
+   10e64:	18bd8010 	popne	{r4, pc}
+   10e68:	ebffffe0 	bl	10df0 <deregister_tm_clones>
+   10e6c:	e3a03001 	mov	r3, #1
+   10e70:	e5c43000 	strb	r3, [r4]
+   10e74:	e8bd8010 	pop	{r4, pc}
+   10e78:	000131b0 			@ <UNDEFINED> instruction: 0x000131b0
+
+00010e7c <frame_dummy>:
+   10e7c:	eaffffe6 	b	10e1c <register_tm_clones>
+
+00010e80 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [clone .isra.0]>:
+   10e80:	e2803008 	add	r3, r0, #8
+   10e84:	e92d4073 	push	{r0, r1, r4, r5, r6, lr}
+   10e88:	e1a04000 	mov	r4, r0
+   10e8c:	e5803000 	str	r3, [r0]
+   10e90:	e5913004 	ldr	r3, [r1, #4]
+   10e94:	e5915000 	ldr	r5, [r1]
+   10e98:	e353000f 	cmp	r3, #15
+   10e9c:	e0856003 	add	r6, r5, r3
+   10ea0:	e58d3004 	str	r3, [sp, #4]
+   10ea4:	9a000005 	bls	10ec0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [clone .isra.0]+0x40>
+   10ea8:	e3a02000 	mov	r2, #0
+   10eac:	e28d1004 	add	r1, sp, #4
+   10eb0:	ebffff5b 	bl	10c24 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned int&, unsigned int)@plt>
+   10eb4:	e59d3004 	ldr	r3, [sp, #4]
+   10eb8:	e5843008 	str	r3, [r4, #8]
+   10ebc:	e5840000 	str	r0, [r4]
+   10ec0:	e1a02006 	mov	r2, r6
+   10ec4:	e1a01005 	mov	r1, r5
+   10ec8:	e5940000 	ldr	r0, [r4]
+   10ecc:	ebffff18 	bl	10b34 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_copy_chars(char*, char*, char*)@plt>
+   10ed0:	e59d3004 	ldr	r3, [sp, #4]
+   10ed4:	e5942000 	ldr	r2, [r4]
+   10ed8:	e3a01000 	mov	r1, #0
+   10edc:	e5843004 	str	r3, [r4, #4]
+   10ee0:	e7c21003 	strb	r1, [r2, r3]
+   10ee4:	e28dd008 	add	sp, sp, #8
+   10ee8:	e8bd8070 	pop	{r4, r5, r6, pc}
+
+00010eec <val(int)>:
+   10eec:	e92d4010 	push	{r4, lr}
+   10ef0:	e24dd080 	sub	sp, sp, #128	@ 0x80
+   10ef4:	e1a04000 	mov	r4, r0
+   10ef8:	e3a02080 	mov	r2, #128	@ 0x80
+   10efc:	e3a01000 	mov	r1, #0
+   10f00:	e1a0000d 	mov	r0, sp
+   10f04:	ebffff13 	bl	10b58 <memset@plt>
+   10f08:	e3540005 	cmp	r4, #5
+   10f0c:	979ff104 	ldrls	pc, [pc, r4, lsl #2]
+   10f10:	ea00000d 	b	10f4c <val(int)+0x60>
+   10f14:	00010f2c 	andeq	r0, r1, ip, lsr #30
+   10f18:	00010f5c 	andeq	r0, r1, ip, asr pc
+   10f1c:	00010f70 	andeq	r0, r1, r0, ror pc
+   10f20:	00010f80 	andeq	r0, r1, r0, lsl #31
+   10f24:	00010f90 	muleq	r1, r0, pc	@ <UNPREDICTABLE>
+   10f28:	00010f9c 	muleq	r1, ip, pc	@ <UNPREDICTABLE>
+   10f2c:	e3a03077 	mov	r3, #119	@ 0x77
+   10f30:	e5cd3000 	strb	r3, [sp]
+   10f34:	e3a03067 	mov	r3, #103	@ 0x67
+   10f38:	e5cd3001 	strb	r3, [sp, #1]
+   10f3c:	e3a03065 	mov	r3, #101	@ 0x65
+   10f40:	e5cd3002 	strb	r3, [sp, #2]
+   10f44:	e3a03074 	mov	r3, #116	@ 0x74
+   10f48:	e5cd3003 	strb	r3, [sp, #3]
+   10f4c:	e1a0000d 	mov	r0, sp
+   10f50:	ebffff39 	bl	10c3c <strdup@plt>
+   10f54:	e28dd080 	add	sp, sp, #128	@ 0x80
+   10f58:	e8bd8010 	pop	{r4, pc}
+   10f5c:	e3a0302d 	mov	r3, #45	@ 0x2d
+   10f60:	e5cd3000 	strb	r3, [sp]
+   10f64:	e3a03071 	mov	r3, #113	@ 0x71
+   10f68:	e5cd3001 	strb	r3, [sp, #1]
+   10f6c:	eafffff6 	b	10f4c <val(int)+0x60>
+   10f70:	e3a0302d 	mov	r3, #45	@ 0x2d
+   10f74:	e5cd3000 	strb	r3, [sp]
+   10f78:	e3a03053 	mov	r3, #83	@ 0x53
+   10f7c:	eafffff9 	b	10f68 <val(int)+0x7c>
+   10f80:	e3a0302d 	mov	r3, #45	@ 0x2d
+   10f84:	e5cd3000 	strb	r3, [sp]
+   10f88:	e3a0304f 	mov	r3, #79	@ 0x4f
+   10f8c:	eafffff5 	b	10f68 <val(int)+0x7c>
+   10f90:	e3a0302d 	mov	r3, #45	@ 0x2d
+   10f94:	e5cd3000 	strb	r3, [sp]
+   10f98:	eaffffeb 	b	10f4c <val(int)+0x60>
+   10f9c:	e3a03068 	mov	r3, #104	@ 0x68
+   10fa0:	e5cd3000 	strb	r3, [sp]
+   10fa4:	e3a02074 	mov	r2, #116	@ 0x74
+   10fa8:	e3a01070 	mov	r1, #112	@ 0x70
+   10fac:	e3a00073 	mov	r0, #115	@ 0x73
+   10fb0:	e3a0303a 	mov	r3, #58	@ 0x3a
+   10fb4:	e5cd2001 	strb	r2, [sp, #1]
+   10fb8:	e5cd2002 	strb	r2, [sp, #2]
+   10fbc:	e5cd1003 	strb	r1, [sp, #3]
+   10fc0:	e5cd0004 	strb	r0, [sp, #4]
+   10fc4:	e5cd3005 	strb	r3, [sp, #5]
+   10fc8:	e3a0302f 	mov	r3, #47	@ 0x2f
+   10fcc:	e5cd3006 	strb	r3, [sp, #6]
+   10fd0:	e5cd3007 	strb	r3, [sp, #7]
+   10fd4:	e5cd1008 	strb	r1, [sp, #8]
+   10fd8:	e3a01061 	mov	r1, #97	@ 0x61
+   10fdc:	e5cd1009 	strb	r1, [sp, #9]
+   10fe0:	e5cd000a 	strb	r0, [sp, #10]
+   10fe4:	e5cd200b 	strb	r2, [sp, #11]
+   10fe8:	e3a02065 	mov	r2, #101	@ 0x65
+   10fec:	e5cd200c 	strb	r2, [sp, #12]
+   10ff0:	e3a00069 	mov	r0, #105	@ 0x69
+   10ff4:	e3a02062 	mov	r2, #98	@ 0x62
+   10ff8:	e5cd200d 	strb	r2, [sp, #13]
+   10ffc:	e5cd000e 	strb	r0, [sp, #14]
+   11000:	e3a0006e 	mov	r0, #110	@ 0x6e
+   11004:	e5cd000f 	strb	r0, [sp, #15]
+   11008:	e3a0002e 	mov	r0, #46	@ 0x2e
+   1100c:	e5cd0010 	strb	r0, [sp, #16]
+   11010:	e3a00063 	mov	r0, #99	@ 0x63
+   11014:	e5cd0011 	strb	r0, [sp, #17]
+   11018:	e3a0006f 	mov	r0, #111	@ 0x6f
+   1101c:	e5cd0012 	strb	r0, [sp, #18]
+   11020:	e3a0006d 	mov	r0, #109	@ 0x6d
+   11024:	e5cd0013 	strb	r0, [sp, #19]
+   11028:	e3a00072 	mov	r0, #114	@ 0x72
+   1102c:	e5cd3014 	strb	r3, [sp, #20]
+   11030:	e5cd0015 	strb	r0, [sp, #21]
+   11034:	e5cd1016 	strb	r1, [sp, #22]
+   11038:	e3a01077 	mov	r1, #119	@ 0x77
+   1103c:	e5cd1017 	strb	r1, [sp, #23]
+   11040:	e5cd3018 	strb	r3, [sp, #24]
+   11044:	e3a03055 	mov	r3, #85	@ 0x55
+   11048:	e5cd2019 	strb	r2, [sp, #25]
+   1104c:	e5cd301a 	strb	r3, [sp, #26]
+   11050:	e3a03039 	mov	r3, #57	@ 0x39
+   11054:	e5cd301b 	strb	r3, [sp, #27]
+   11058:	e3a03032 	mov	r3, #50	@ 0x32
+   1105c:	e5cd301c 	strb	r3, [sp, #28]
+   11060:	e3a0305a 	mov	r3, #90	@ 0x5a
+   11064:	e5cd301d 	strb	r3, [sp, #29]
+   11068:	e3a02079 	mov	r2, #121	@ 0x79
+   1106c:	e3a03056 	mov	r3, #86	@ 0x56
+   11070:	e5cd301e 	strb	r3, [sp, #30]
+   11074:	e5cd201f 	strb	r2, [sp, #31]
+   11078:	e5cd3020 	strb	r3, [sp, #32]
+   1107c:	eaffffb2 	b	10f4c <val(int)+0x60>
+
+00011080 <flag()>:
+   11080:	e92d4030 	push	{r4, r5, lr}
+   11084:	e24dd02c 	sub	sp, sp, #44	@ 0x2c
+   11088:	e59f5110 	ldr	r5, [pc, #272]	@ 111a0 <flag()+0x120>
+   1108c:	e28d3018 	add	r3, sp, #24
+   11090:	e58d3010 	str	r3, [sp, #16]
+   11094:	e3a03000 	mov	r3, #0
+   11098:	e58d3014 	str	r3, [sp, #20]
+   1109c:	e5cd3018 	strb	r3, [sp, #24]
+   110a0:	e58d3004 	str	r3, [sp, #4]
+   110a4:	e58d3008 	str	r3, [sp, #8]
+   110a8:	e58d300c 	str	r3, [sp, #12]
+   110ac:	e28d1010 	add	r1, sp, #16
+   110b0:	e1a00005 	mov	r0, r5
+   110b4:	ebfffe9b 	bl	10b28 <std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)@plt>
+   110b8:	ea00000d 	b	110f4 <flag()+0x74>
+   110bc:	e59d300c 	ldr	r3, [sp, #12]
+   110c0:	e1540003 	cmp	r4, r3
+   110c4:	0a000005 	beq	110e0 <flag()+0x60>
+   110c8:	e28d1010 	add	r1, sp, #16
+   110cc:	e1a00004 	mov	r0, r4
+   110d0:	ebffff6a 	bl	10e80 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [clone .isra.0]>
+   110d4:	e2844018 	add	r4, r4, #24
+   110d8:	e58d4008 	str	r4, [sp, #8]
+   110dc:	eafffff2 	b	110ac <flag()+0x2c>
+   110e0:	e28d2010 	add	r2, sp, #16
+   110e4:	e1a01004 	mov	r1, r4
+   110e8:	e28d0004 	add	r0, sp, #4
+   110ec:	eb00005e 	bl	1126c <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   110f0:	eaffffed 	b	110ac <flag()+0x2c>
+   110f4:	e5903000 	ldr	r3, [r0]
+   110f8:	e59d4008 	ldr	r4, [sp, #8]
+   110fc:	e513300c 	ldr	r3, [r3, #-12]
+   11100:	e0800003 	add	r0, r0, r3
+   11104:	e5903014 	ldr	r3, [r0, #20]
+   11108:	e3130005 	tst	r3, #5
+   1110c:	0affffea 	beq	110bc <flag()+0x3c>
+   11110:	e59d1004 	ldr	r1, [sp, #4]
+   11114:	e0444001 	sub	r4, r4, r1
+   11118:	e3540000 	cmp	r4, #0
+   1111c:	ca00000a 	bgt	1114c <flag()+0xcc>
+   11120:	e59f307c 	ldr	r3, [pc, #124]	@ 111a4 <flag()+0x124>
+   11124:	e1a041c4 	asr	r4, r4, #3
+   11128:	e0040493 	mul	r4, r3, r4
+   1112c:	e3540001 	cmp	r4, #1
+   11130:	0a000005 	beq	1114c <flag()+0xcc>
+   11134:	e28d0004 	add	r0, sp, #4
+   11138:	eb00003a 	bl	11228 <std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()>
+   1113c:	e28d0010 	add	r0, sp, #16
+   11140:	ebfffe9f 	bl	10bc4 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()@plt>
+   11144:	e28dd02c 	add	sp, sp, #44	@ 0x2c
+   11148:	e8bd8030 	pop	{r4, r5, pc}
+   1114c:	e59f0054 	ldr	r0, [pc, #84]	@ 111a8 <flag()+0x128>
+   11150:	ebfffe8f 	bl	10b94 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
+   11154:	e5902000 	ldr	r2, [r0]
+   11158:	e3a0100a 	mov	r1, #10
+   1115c:	e5cd1003 	strb	r1, [sp, #3]
+   11160:	e512200c 	ldr	r2, [r2, #-12]
+   11164:	e0803002 	add	r3, r0, r2
+   11168:	e5933008 	ldr	r3, [r3, #8]
+   1116c:	e3530000 	cmp	r3, #0
+   11170:	0a000003 	beq	11184 <flag()+0x104>
+   11174:	e3a02001 	mov	r2, #1
+   11178:	e28d1003 	add	r1, sp, #3
+   1117c:	ebfffe93 	bl	10bd0 <std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)@plt>
+   11180:	eaffffeb 	b	11134 <flag()+0xb4>
+   11184:	ebfffe5e 	bl	10b04 <std::basic_ostream<char, std::char_traits<char> >::put(char)@plt>
+   11188:	eaffffe9 	b	11134 <flag()+0xb4>
+   1118c:	e28d0004 	add	r0, sp, #4
+   11190:	eb000024 	bl	11228 <std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()>
+   11194:	e28d0010 	add	r0, sp, #16
+   11198:	ebfffe89 	bl	10bc4 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()@plt>
+   1119c:	ebfffe82 	bl	10bac <__cxa_end_cleanup@plt>
+   111a0:	00013120 	andeq	r3, r1, r0, lsr #2
+   111a4:	aaaaaaab 	bge	feabbc58 <__bss_end__+0xfeaa8aa4>
+   111a8:	00013090 	muleq	r1, r0, r0
+
+000111ac <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__relocate_a_1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&) [clone .isra.0]>:
+   111ac:	e92d41f0 	push	{r4, r5, r6, r7, r8, lr}
+   111b0:	e1a04000 	mov	r4, r0
+   111b4:	e1a07001 	mov	r7, r1
+   111b8:	e2825008 	add	r5, r2, #8
+   111bc:	e3a08000 	mov	r8, #0
+   111c0:	e1540007 	cmp	r4, r7
+   111c4:	e2450008 	sub	r0, r5, #8
+   111c8:	08bd81f0 	popeq	{r4, r5, r6, r7, r8, pc}
+   111cc:	e1a06004 	mov	r6, r4
+   111d0:	e5055008 	str	r5, [r5, #-8]
+   111d4:	e4963008 	ldr	r3, [r6], #8
+   111d8:	e5942004 	ldr	r2, [r4, #4]
+   111dc:	e1530006 	cmp	r3, r6
+   111e0:	15053008 	strne	r3, [r5, #-8]
+   111e4:	15943008 	ldrne	r3, [r4, #8]
+   111e8:	15853000 	strne	r3, [r5]
+   111ec:	1a000004 	bne	11204 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__relocate_a_1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&) [clone .isra.0]+0x58>
+   111f0:	e2922001 	adds	r2, r2, #1
+   111f4:	0a000002 	beq	11204 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__relocate_a_1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&) [clone .isra.0]+0x58>
+   111f8:	e1a01006 	mov	r1, r6
+   111fc:	e1a00005 	mov	r0, r5
+   11200:	ebfffe7b 	bl	10bf4 <memcpy@plt>
+   11204:	e5943004 	ldr	r3, [r4, #4]
+   11208:	e1a00004 	mov	r0, r4
+   1120c:	e5053004 	str	r3, [r5, #-4]
+   11210:	e8840140 	stm	r4, {r6, r8}
+   11214:	e5c48008 	strb	r8, [r4, #8]
+   11218:	ebfffe69 	bl	10bc4 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()@plt>
+   1121c:	e2844018 	add	r4, r4, #24
+   11220:	e2855018 	add	r5, r5, #24
+   11224:	eaffffe5 	b	111c0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__relocate_a_1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&) [clone .isra.0]+0x14>
+
+00011228 <std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()>:
+   11228:	e92d4070 	push	{r4, r5, r6, lr}
+   1122c:	e1a04000 	mov	r4, r0
+   11230:	e8900060 	ldm	r0, {r5, r6}
+   11234:	e1560005 	cmp	r6, r5
+   11238:	1a000007 	bne	1125c <std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()+0x34>
+   1123c:	e5940000 	ldr	r0, [r4]
+   11240:	e3500000 	cmp	r0, #0
+   11244:	0a000002 	beq	11254 <std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()+0x2c>
+   11248:	e5941008 	ldr	r1, [r4, #8]
+   1124c:	e0411000 	sub	r1, r1, r0
+   11250:	ebfffe43 	bl	10b64 <operator delete(void*, unsigned int)@plt>
+   11254:	e1a00004 	mov	r0, r4
+   11258:	e8bd8070 	pop	{r4, r5, r6, pc}
+   1125c:	e1a00005 	mov	r0, r5
+   11260:	ebfffe57 	bl	10bc4 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()@plt>
+   11264:	e2855018 	add	r5, r5, #24
+   11268:	eafffff1 	b	11234 <std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()+0xc>
+
+0001126c <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>:
+   1126c:	e92d4ff7 	push	{r0, r1, r2, r4, r5, r6, r7, r8, r9, sl, fp, lr}
+   11270:	e8900280 	ldm	r0, {r7, r9}
+   11274:	e59f3110 	ldr	r3, [pc, #272]	@ 1138c <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x120>
+   11278:	e0494007 	sub	r4, r9, r7
+   1127c:	e1a041c4 	asr	r4, r4, #3
+   11280:	e0040493 	mul	r4, r3, r4
+   11284:	e59f3104 	ldr	r3, [pc, #260]	@ 11390 <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x124>
+   11288:	e1540003 	cmp	r4, r3
+   1128c:	1a000001 	bne	11298 <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x2c>
+   11290:	e59f00fc 	ldr	r0, [pc, #252]	@ 11394 <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x128>
+   11294:	ebfffe2c 	bl	10b4c <std::__throw_length_error(char const*)@plt>
+   11298:	e1590007 	cmp	r9, r7
+   1129c:	e1a08001 	mov	r8, r1
+   112a0:	e1a01002 	mov	r1, r2
+   112a4:	11a02004 	movne	r2, r4
+   112a8:	03a02001 	moveq	r2, #1
+   112ac:	e0944002 	adds	r4, r4, r2
+   112b0:	e1a06000 	mov	r6, r0
+   112b4:	e048b007 	sub	fp, r8, r7
+   112b8:	2a00000d 	bcs	112f4 <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x88>
+   112bc:	e3540000 	cmp	r4, #0
+   112c0:	0a000014 	beq	11318 <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xac>
+   112c4:	e1540003 	cmp	r4, r3
+   112c8:	21a04003 	movcs	r4, r3
+   112cc:	e3a0a018 	mov	sl, #24
+   112d0:	e58d1004 	str	r1, [sp, #4]
+   112d4:	e00a049a 	mul	sl, sl, r4
+   112d8:	e1a0000a 	mov	r0, sl
+   112dc:	ebfffe0b 	bl	10b10 <operator new(unsigned int)@plt>
+   112e0:	e59d1004 	ldr	r1, [sp, #4]
+   112e4:	e1a05000 	mov	r5, r0
+   112e8:	e080000b 	add	r0, r0, fp
+   112ec:	ebfffee3 	bl	10e80 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [clone .isra.0]>
+   112f0:	ea000010 	b	11338 <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xcc>
+   112f4:	e1a04003 	mov	r4, r3
+   112f8:	eafffff3 	b	112cc <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x60>
+   112fc:	ebfffe0f 	bl	10b40 <__cxa_begin_catch@plt>
+   11300:	e1a0100a 	mov	r1, sl
+   11304:	e1a00005 	mov	r0, r5
+   11308:	ebfffe15 	bl	10b64 <operator delete(void*, unsigned int)@plt>
+   1130c:	ebfffe35 	bl	10be8 <__cxa_rethrow@plt>
+   11310:	ebfffe3d 	bl	10c0c <__cxa_end_catch@plt>
+   11314:	ebfffe24 	bl	10bac <__cxa_end_cleanup@plt>
+   11318:	e1a0000b 	mov	r0, fp
+   1131c:	ebfffed7 	bl	10e80 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [clone .isra.0]>
+   11320:	ea000003 	b	11334 <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xc8>
+   11324:	ebfffe05 	bl	10b40 <__cxa_begin_catch@plt>
+   11328:	e1a0000b 	mov	r0, fp
+   1132c:	ebfffe24 	bl	10bc4 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()@plt>
+   11330:	eafffff5 	b	1130c <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xa0>
+   11334:	e3a05000 	mov	r5, #0
+   11338:	e1a01008 	mov	r1, r8
+   1133c:	e1a02005 	mov	r2, r5
+   11340:	e1a00007 	mov	r0, r7
+   11344:	ebffff98 	bl	111ac <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__relocate_a_1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&) [clone .isra.0]>
+   11348:	e1a01009 	mov	r1, r9
+   1134c:	e2802018 	add	r2, r0, #24
+   11350:	e1a00008 	mov	r0, r8
+   11354:	ebffff94 	bl	111ac <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__relocate_a_1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&) [clone .isra.0]>
+   11358:	e3570000 	cmp	r7, #0
+   1135c:	e1a08000 	mov	r8, r0
+   11360:	0a000003 	beq	11374 <void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x108>
+   11364:	e5961008 	ldr	r1, [r6, #8]
+   11368:	e1a00007 	mov	r0, r7
+   1136c:	e0411007 	sub	r1, r1, r7
+   11370:	ebfffdfb 	bl	10b64 <operator delete(void*, unsigned int)@plt>
+   11374:	e3a03018 	mov	r3, #24
+   11378:	e8860120 	stm	r6, {r5, r8}
+   1137c:	e0255493 	mla	r5, r3, r4, r5
+   11380:	e5865008 	str	r5, [r6, #8]
+   11384:	e28dd00c 	add	sp, sp, #12
+   11388:	e8bd8ff0 	pop	{r4, r5, r6, r7, r8, r9, sl, fp, pc}
+   1138c:	aaaaaaab 	bge	feabbe40 <__bss_end__+0xfeaa8c8c>
+   11390:	05555555 	ldrbeq	r5, [r5, #-1365]	@ 0xfffffaab
+   11394:	00011434 	andeq	r1, r1, r4, lsr r4
+
+Disassembly of section .fini:
+
+00011398 <_fini>:
+   11398:	e92d4008 	push	{r3, lr}
+   1139c:	e8bd8008 	pop	{r3, pc}
+
+Disassembly of section .rodata:
+
+000113a0 <_IO_stdin_used>:
+   113a0:	00020001 	andeq	r0, r2, r1
+
+000113a4 <all_implied_fbits>:
+   113a4:	0000003d 	andeq	r0, r0, sp, lsr r0
+   113a8:	00000040 	andeq	r0, r0, r0, asr #32
+   113ac:	0000000b 	andeq	r0, r0, fp
+   113b0:	00000040 	andeq	r0, r0, r0, asr #32
+   113b4:	00000010 	andeq	r0, r0, r0, lsl r0
+   113b8:	00000040 	andeq	r0, r0, r0, asr #32
+   113bc:	00000026 	andeq	r0, r0, r6, lsr #32
+   113c0:	00000040 	andeq	r0, r0, r0, asr #32
+   113c4:	00000035 	andeq	r0, r0, r5, lsr r0
+   113c8:	00000040 	andeq	r0, r0, r0, asr #32
+   113cc:	00000003 	andeq	r0, r0, r3
+   113d0:	00000040 	andeq	r0, r0, r0, asr #32
+   113d4:	00000006 	andeq	r0, r0, r6
+   113d8:	00000040 	andeq	r0, r0, r0, asr #32
+   113dc:	00000014 	andeq	r0, r0, r4, lsl r0
+   113e0:	00000040 	andeq	r0, r0, r0, asr #32
+   113e4:	0000000e 	andeq	r0, r0, lr
+   113e8:	00000040 	andeq	r0, r0, r0, asr #32
+   113ec:	0000000d 	andeq	r0, r0, sp
+   113f0:	00000040 	andeq	r0, r0, r0, asr #32
+   113f4:	00000025 	andeq	r0, r0, r5, lsr #32
+   113f8:	00000040 	andeq	r0, r0, r0, asr #32
+   113fc:	00000012 	andeq	r0, r0, r2, lsl r0
+   11400:	00000040 	andeq	r0, r0, r0, asr #32
+   11404:	00000028 	andeq	r0, r0, r8, lsr #32
+   11408:	00000040 	andeq	r0, r0, r0, asr #32
+   1140c:	00000002 	andeq	r0, r0, r2
+   11410:	00000040 	andeq	r0, r0, r0, asr #32
+   11414:	00000018 	andeq	r0, r0, r8, lsl r0
+   11418:	00000040 	andeq	r0, r0, r0, asr #32
+   1141c:	00000009 	andeq	r0, r0, r9
+   11420:	00000040 	andeq	r0, r0, r0, asr #32
+   11424:	0000000a 	andeq	r0, r0, sl
+   11428:	00000040 	andeq	r0, r0, r0, asr #32
+	...
+   11434:	74636576 	strbtvc	r6, [r3], #-1398	@ 0xfffffa8a
+   11438:	3a3a726f 	bcc	eaddfc <__bss_end__+0xe9ac48>
+   1143c:	725f4d5f 	subsvc	r4, pc, #6080	@ 0x17c0
+   11440:	6c6c6165 	stfvse	f6, [ip], #-404	@ 0xfffffe6c
+   11444:	695f636f 	ldmdbvs	pc, {r0, r1, r2, r3, r5, r6, r8, r9, sp, lr}^	@ <UNPREDICTABLE>
+   11448:	7265736e 	rsbvc	r7, r5, #-1207959551	@ 0xb8000001
+   1144c:	00000074 	andeq	r0, r0, r4, ror r0
+
+00011450 <all_implied_fbits>:
+   11450:	0000003d 	andeq	r0, r0, sp, lsr r0
+   11454:	00000040 	andeq	r0, r0, r0, asr #32
+   11458:	0000000b 	andeq	r0, r0, fp
+   1145c:	00000040 	andeq	r0, r0, r0, asr #32
+   11460:	00000010 	andeq	r0, r0, r0, lsl r0
+   11464:	00000040 	andeq	r0, r0, r0, asr #32
+   11468:	00000026 	andeq	r0, r0, r6, lsr #32
+   1146c:	00000040 	andeq	r0, r0, r0, asr #32
+   11470:	00000035 	andeq	r0, r0, r5, lsr r0
+   11474:	00000040 	andeq	r0, r0, r0, asr #32
+   11478:	00000003 	andeq	r0, r0, r3
+   1147c:	00000040 	andeq	r0, r0, r0, asr #32
+   11480:	00000006 	andeq	r0, r0, r6
+   11484:	00000040 	andeq	r0, r0, r0, asr #32
+   11488:	00000014 	andeq	r0, r0, r4, lsl r0
+   1148c:	00000040 	andeq	r0, r0, r0, asr #32
+   11490:	0000000e 	andeq	r0, r0, lr
+   11494:	00000040 	andeq	r0, r0, r0, asr #32
+   11498:	0000000d 	andeq	r0, r0, sp
+   1149c:	00000040 	andeq	r0, r0, r0, asr #32
+   114a0:	00000025 	andeq	r0, r0, r5, lsr #32
+   114a4:	00000040 	andeq	r0, r0, r0, asr #32
+   114a8:	00000012 	andeq	r0, r0, r2, lsl r0
+   114ac:	00000040 	andeq	r0, r0, r0, asr #32
+   114b0:	00000028 	andeq	r0, r0, r8, lsr #32
+   114b4:	00000040 	andeq	r0, r0, r0, asr #32
+   114b8:	00000002 	andeq	r0, r0, r2
+   114bc:	00000040 	andeq	r0, r0, r0, asr #32
+   114c0:	00000018 	andeq	r0, r0, r8, lsl r0
+   114c4:	00000040 	andeq	r0, r0, r0, asr #32
+   114c8:	00000009 	andeq	r0, r0, r9
+   114cc:	00000040 	andeq	r0, r0, r0, asr #32
+   114d0:	0000000a 	andeq	r0, r0, sl
+   114d4:	00000040 	andeq	r0, r0, r0, asr #32
+	...
+
+Disassembly of section .ARM.extab:
+
+000114e0 <.ARM.extab>:
+   114e0:	7ffff738 	svcvc	0x00fff738
+   114e4:	000aa9b0 			@ <UNDEFINED> instruction: 0x000aa9b0
+   114e8:	0b01ffff 	bleq	914ec <__bss_end__+0x7e338>
+   114ec:	8c01d434 	cfstrshi	mvf13, [r1], {52}	@ 0x34
+   114f0:	029c0002 	addseq	r0, ip, #2
+   114f4:	00000004 	andeq	r0, r0, r4
+   114f8:	7ffff720 	svcvc	0x00fff720
+   114fc:	0002afb0 			@ <UNDEFINED> instruction: 0x0002afb0
+   11500:	012590ff 	strdeq	r9, [r5, -pc]!
+   11504:	004c281b 	subeq	r2, ip, fp, lsl r8
+   11508:	04018000 	streq	r8, [r1], #-0
+   1150c:	a0010190 	mulge	r1, r0, r1
+   11510:	01a40401 			@ <UNDEFINED> instruction: 0x01a40401
+   11514:	0401a800 	streq	sl, [r1], #-2048	@ 0xfffff800
+   11518:	01b00000 	movseq	r0, r0
+   1151c:	0101b804 	tsteq	r1, r4, lsl #16
+   11520:	00000001 	andeq	r0, r0, r1
+   11524:	00000000 	andeq	r0, r0, r0
+
+Disassembly of section .ARM.exidx:
+
+00011528 <.ARM.exidx>:
+   11528:	7ffff738 	svcvc	0x00fff738
+   1152c:	8005aeb0 			@ <UNDEFINED> instruction: 0x8005aeb0
+   11530:	7ffff828 	svcvc	0x00fff828
+   11534:	00000001 	andeq	r0, r0, r1
+   11538:	7ffff948 	svcvc	0x00fff948
+   1153c:	8001aab0 			@ <UNDEFINED> instruction: 0x8001aab0
+   11540:	7ffff9ac 	svcvc	0x00fff9ac
+   11544:	00000001 	andeq	r0, r0, r1
+   11548:	7ffffb38 	svcvc	0x00fffb38
+   1154c:	7fffff94 	svcvc	0x00ffff94
+   11550:	7ffffc5c 	svcvc	0x00fffc5c
+   11554:	00000001 	andeq	r0, r0, r1
+   11558:	7ffffd14 	svcvc	0x00fffd14
+   1155c:	7fffff9c 	svcvc	0x00ffff9c
+   11560:	7ffffe38 	svcvc	0x00fffe38
+   11564:	00000001 	andeq	r0, r0, r1
+
+Disassembly of section .eh_frame:
+
+00011568 <__FRAME_END__>:
+   11568:	00000000 	andeq	r0, r0, r0
+
+Disassembly of section .init_array:
+
+00012efc <__frame_dummy_init_array_entry>:
+   12efc:	00010e7c 	andeq	r0, r1, ip, ror lr
+   12f00:	00010d58 	andeq	r0, r1, r8, asr sp
+
+Disassembly of section .fini_array:
+
+00012f04 <__do_global_dtors_aux_fini_array_entry>:
+   12f04:	00010e54 	andeq	r0, r1, r4, asr lr
+
+Disassembly of section .dynamic:
+
+00012f08 <_DYNAMIC>:
+   12f08:	00000001 	andeq	r0, r0, r1
+   12f0c:	00000378 	andeq	r0, r0, r8, ror r3
+   12f10:	00000001 	andeq	r0, r0, r1
+   12f14:	00000387 	andeq	r0, r0, r7, lsl #7
+   12f18:	00000001 	andeq	r0, r0, r1
+   12f1c:	00000395 	muleq	r0, r5, r3
+   12f20:	0000000c 	andeq	r0, r0, ip
+   12f24:	00010ae4 	andeq	r0, r1, r4, ror #21
+   12f28:	0000000d 	andeq	r0, r0, sp
+   12f2c:	00011398 	muleq	r1, r8, r3
+   12f30:	00000019 	andeq	r0, r0, r9, lsl r0
+   12f34:	00012efc 	strdeq	r2, [r1], -ip
+   12f38:	0000001b 	andeq	r0, r0, fp, lsl r0
+   12f3c:	00000008 	andeq	r0, r0, r8
+   12f40:	0000001a 	andeq	r0, r0, sl, lsl r0
+   12f44:	00012f04 	andeq	r2, r1, r4, lsl #30
+   12f48:	0000001c 	andeq	r0, r0, ip, lsl r0
+   12f4c:	00000004 	andeq	r0, r0, r4
+   12f50:	6ffffef5 	svcvs	0x00fffef5
+   12f54:	000101b4 			@ <UNDEFINED> instruction: 0x000101b4
+   12f58:	00000005 	andeq	r0, r0, r5
+   12f5c:	000104d0 	ldrdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   12f60:	00000006 	andeq	r0, r0, r6
+   12f64:	000102a0 	andeq	r0, r1, r0, lsr #5
+   12f68:	0000000a 	andeq	r0, r0, sl
+   12f6c:	0000040e 	andeq	r0, r0, lr, lsl #8
+   12f70:	0000000b 	andeq	r0, r0, fp
+   12f74:	00000010 	andeq	r0, r0, r0, lsl r0
+   12f78:	00000015 	andeq	r0, r0, r5, lsl r0
+   12f7c:	00000000 	andeq	r0, r0, r0
+   12f80:	00000003 	andeq	r0, r0, r3
+   12f84:	00013000 	andeq	r3, r1, r0
+   12f88:	00000002 	andeq	r0, r0, r2
+   12f8c:	000000e8 	andeq	r0, r0, r8, ror #1
+   12f90:	00000014 	andeq	r0, r0, r4, lsl r0
+   12f94:	00000011 	andeq	r0, r0, r1, lsl r0
+   12f98:	00000017 	andeq	r0, r0, r7, lsl r0
+   12f9c:	000109fc 	strdeq	r0, [r1], -ip
+   12fa0:	00000011 	andeq	r0, r0, r1, lsl r0
+   12fa4:	000109e4 	andeq	r0, r1, r4, ror #19
+   12fa8:	00000012 	andeq	r0, r0, r2, lsl r0
+   12fac:	00000018 	andeq	r0, r0, r8, lsl r0
+   12fb0:	00000013 	andeq	r0, r0, r3, lsl r0
+   12fb4:	00000008 	andeq	r0, r0, r8
+   12fb8:	6ffffffe 	svcvs	0x00fffffe
+   12fbc:	00010924 	andeq	r0, r1, r4, lsr #18
+   12fc0:	6fffffff 	svcvs	0x00ffffff
+   12fc4:	00000003 	andeq	r0, r0, r3
+   12fc8:	6ffffff0 	svcvs	0x00fffff0
+   12fcc:	000108de 	ldrdeq	r0, [r1], -lr
+	...
+
+Disassembly of section .got:
+
+00013000 <_GLOBAL_OFFSET_TABLE_>:
+   13000:	00012f08 	andeq	r2, r1, r8, lsl #30
+	...
+   1300c:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13010:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13014:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13018:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   1301c:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13020:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13024:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13028:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   1302c:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13030:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13034:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13038:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   1303c:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13040:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13044:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13048:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   1304c:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13050:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13054:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13058:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   1305c:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13060:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13064:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13068:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   1306c:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13070:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13074:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13078:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   1307c:	00010af0 	strdeq	r0, [r1], -r0	@ <UNPREDICTABLE>
+   13080:	00010c60 	andeq	r0, r1, r0, ror #24
+   13084:	00000000 	andeq	r0, r0, r0
+
+Disassembly of section .data:
+
+00013088 <__data_start>:
+   13088:	00000000 	andeq	r0, r0, r0
+
+0001308c <__dso_handle>:
+   1308c:	00000000 	andeq	r0, r0, r0
+
+Disassembly of section .bss:
+
+00013090 <std::cout@GLIBCXX_3.4>:
+	...
+
+00013120 <std::cin@GLIBCXX_3.4>:
+	...
+
+000131b0 <completed.0>:
+	...
+
+000131b1 <std::__ioinit>:
+   131b1:	Address 0x131b1 is out of bounds.
+
+
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	3a434347 	bcc	10d0d24 <__bss_end__+0x10bdb70>
+   4:	61522820 	cmpvs	r2, r0, lsr #16
+   8:	69627073 	stmdbvs	r2!, {r0, r1, r4, r5, r6, ip, sp, lr}^
+   c:	31206e61 			@ <UNDEFINED> instruction: 0x31206e61
+  10:	2e322e32 	mrccs	14, 1, r2, cr2, cr2, {1}
+  14:	34312d30 	ldrtcc	r2, [r1], #-3376	@ 0xfffff2d0
+  18:	6970722b 	ldmdbvs	r0!, {r0, r1, r3, r5, r9, ip, sp, lr}^
+  1c:	31202931 			@ <UNDEFINED> instruction: 0x31202931
+  20:	2e322e32 	mrccs	14, 1, r2, cr2, cr2, {1}
+  24:	Address 0x24 is out of bounds.
+
+
+Disassembly of section .ARM.attributes:
+
+00000000 <.ARM.attributes>:
+   0:	00002e41 	andeq	r2, r0, r1, asr #28
+   4:	61656100 	cmnvs	r5, r0, lsl #2
+   8:	01006962 	tsteq	r0, r2, ror #18
+   c:	00000024 	andeq	r0, r0, r4, lsr #32
+  10:	06003605 	streq	r3, [r0], -r5, lsl #12
+  14:	09010806 	stmdbeq	r1, {r1, r2, fp}
+  18:	12020a01 	andne	r0, r2, #4096	@ 0x1000
+  1c:	14011304 	strne	r1, [r1], #-772	@ 0xfffffcfc
+  20:	17011501 	strne	r1, [r1, -r1, lsl #10]
+  24:	19011803 	stmdbne	r1, {r0, r1, fp, ip}
+  28:	1c021a01 			@ <UNDEFINED> instruction: 0x1c021a01
+  2c:	Address 0x2c is out of bounds.
+

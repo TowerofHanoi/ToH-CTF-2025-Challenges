@@ -1,0 +1,301 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+                              /tmp/ccPj5SEf.ltrans0.ltrans.o (memset)
+/opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+                              /tmp/ccPj5SEf.ltrans0.ltrans.o (memcpy)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .data          0x00000000        0x0 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .bss           0x00000000        0x0 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._exit    0x00000000        0x2 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._kill    0x00000000        0x4 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._getpid  0x00000000        0x4 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._close   0x00000000        0x4 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._lseek   0x00000000        0x4 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._read    0x00000000        0x4 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._fstat   0x00000000       0x22 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._isatty  0x00000000        0x4 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._sbrk    0x00000000       0x1e /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .data._ZL16APBAHBPrescTable.lto_priv.0
+                0x00000000       0x10 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .data._ZL13ADCPrescTable.lto_priv.0
+                0x00000000       0x14 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .data._ZL16APBAHBPrescTable.lto_priv.1
+                0x00000000       0x10 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .data._ZL13ADCPrescTable.lto_priv.1
+                0x00000000       0x14 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .sbss._ZZ5_sbrkE10curHeapEnd
+                0x00000000        0x4 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .comment       0x00000000       0x13 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .comment       0x00000000       0x13 /tmp/ccUEMZHK.debug.temp.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccUEMZHK.debug.temp.o
+ .comment       0x00000000       0x13 /tmp/ccsoN3rO.debug.temp.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccsoN3rO.debug.temp.o
+ .data          0x00000000        0x0 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+ .data          0x00000000        0x0 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+ .bss           0x00000000        0x0 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00000000         0x00004000         xr
+RAM              0x20000000         0x00000800         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD sound.o
+LOAD /tmp/ccPj5SEf.ltrans0.ltrans.o
+LOAD /tmp/ccUEMZHK.debug.temp.o
+LOAD /tmp/ccsoN3rO.debug.temp.o
+LOAD ../runtime/runtime.o
+START GROUP
+LOAD /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libstdc++.a
+LOAD /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a
+LOAD /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libm.a
+LOAD /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/rv32ec/ilp32e/libgcc.a
+END GROUP
+
+.init           0x00000000       0xd0
+                0x00000000                        _sinit = .
+                0x00000000                        . = ALIGN (0x4)
+ *(SORT_NONE(.init))
+ .init          0x00000000       0xce /tmp/ccPj5SEf.ltrans0.ltrans.o
+                0x00000000                BootCode()
+                0x000000d0                        . = ALIGN (0x4)
+ *fill*         0x000000ce        0x2 
+                0x000000d0                        _einit = .
+
+.text           0x000000d0      0xa54
+                0x000000d0                        . = ALIGN (0x4)
+ *(.text)
+ .text          0x000000d0       0x10 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+                0x000000d0                memset
+ .text          0x000000e0       0x16 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+                0x000000e0                memcpy
+ *(.text.*)
+ .text._Z4highv
+                0x000000f6       0x14 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._Z3lowv  0x0000010a       0x14 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._Z9sleepTickj
+                0x0000011e       0x32 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._Z5pulsei
+                0x00000150       0x30 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .text._Z15SysTick_Handlerv
+                0x00000180       0x14 /tmp/ccPj5SEf.ltrans0.ltrans.o
+                0x00000180                SysTick_Handler()
+ .text._write   0x00000194       0x7e /tmp/ccPj5SEf.ltrans0.ltrans.o
+                0x00000194                _write
+ .text._Z10mainLoaderv
+                0x00000212      0x8f2 /tmp/ccPj5SEf.ltrans0.ltrans.o
+                0x00000212                mainLoader()
+ .text.Default_Handler
+                0x00000b04        0x2 /tmp/ccPj5SEf.ltrans0.ltrans.o
+                0x00000b04                TIM1_TRG_COM_IRQHandler()
+                0x00000b04                DMA1_Channel1_IRQHandler()
+                0x00000b04                DMA1_Channel7_IRQHandler()
+                0x00000b04                HardFault_Handler()
+                0x00000b04                WWDG_IRQHandler()
+                0x00000b04                RCC_IRQHandler()
+                0x00000b04                DMA1_Channel6_IRQHandler()
+                0x00000b04                SPI1_IRQHandler()
+                0x00000b04                USART1_IRQHandler()
+                0x00000b04                ADC1_IRQHandler()
+                0x00000b04                DMA1_Channel2_IRQHandler()
+                0x00000b04                TIM1_BRK_IRQHandler()
+                0x00000b04                NMI_Handler()
+                0x00000b04                I2C1_EV_IRQHandler()
+                0x00000b04                DMA1_Channel5_IRQHandler()
+                0x00000b04                DMA1_Channel3_IRQHandler()
+                0x00000b04                TIM1_CC_IRQHandler()
+                0x00000b04                TIM2_IRQHandler()
+                0x00000b04                EXTI7_0_IRQHandler()
+                0x00000b04                FLASH_IRQHandler()
+                0x00000b04                PVD_IRQHandler()
+                0x00000b04                SVCall_Handler()
+                0x00000b04                I2C1_ER_IRQHandler()
+                0x00000b04                TIM1_UP_IRQHandler()
+                0x00000b04                DMA1_Channel4_IRQHandler()
+                0x00000b04                AWU_IRQHandler()
+ *(.rodata)
+ *(.rodata*)
+ *fill*         0x00000b06        0x2 
+ .rodata._Z10mainLoaderv.str1.4
+                0x00000b08       0x1a /tmp/ccPj5SEf.ltrans0.ltrans.o
+ *(.gnu.linkonce.t.*)
+                0x00000b24                        . = ALIGN (0x4)
+ *fill*         0x00000b22        0x2 
+
+.rela.dyn       0x00000b24        0x0
+ .rela.text._Z10mainLoaderv
+                0x00000b24        0x0 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .rela.init     0x00000b24        0x0 /tmp/ccPj5SEf.ltrans0.ltrans.o
+
+.fini           0x00000b24        0x0
+ *(SORT_NONE(.fini))
+                0x00000b24                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (_eitcm = .)
+
+.preinit_array  0x00000b24        0x0
+                0x00000b24                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000b24                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x00000b24        0x0
+                0x00000b24                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000b24                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x00000b24        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.dalign         0x20000000        0x0 load address 0x00000b24
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        PROVIDE (_data_vma = .)
+
+.dlalign        0x00000b24        0x0
+                0x00000b24                        . = ALIGN (0x4)
+                0x00000b24                        PROVIDE (_data_lma = .)
+
+.data           0x20000000        0x0 load address 0x00000b24
+                0x20000000                        . = ALIGN (0x4)
+                0x200003fc                        __global_pointer$ = (. + 0x3fc)
+ *(.gnu.linkonce.r.*)
+ *(.data .data.*)
+ *(.gnu.linkonce.d.*)
+                0x20000000                        . = ALIGN (0x8)
+ *(.sdata .sdata.*)
+ *(.sdata2*)
+ *(.gnu.linkonce.s.*)
+                0x20000000                        . = ALIGN (0x8)
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ *(.srodata.cst2)
+ *(.srodata .srodata.*)
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        PROVIDE (_edata = .)
+
+.bss            0x20000000        0x0 load address 0x00000b24
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        PROVIDE (_sbss = .)
+ *(.sbss*)
+ *(.gnu.linkonce.sb.*)
+ *(.bss*)
+ *(.gnu.linkonce.b.*)
+ *(COMMON*)
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        PROVIDE (_ebss = .)
+                0x20000000                        PROVIDE (_end = _ebss)
+                [!provide]                        PROVIDE (end = .)
+                0x20000800                        PROVIDE (_eusrstack = (ORIGIN (RAM) + LENGTH (RAM)))
+
+/DISCARD/
+ *(.note .note.*)
+ *(.eh_frame .eh_frame.*)
+ *(.comment .comment.*)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.ARM.exidx*)
+OUTPUT(main.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x25
+ .riscv.attributes
+                0x00000000       0x25 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .riscv.attributes
+                0x00000025       0x1f /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+ .riscv.attributes
+                0x00000044       0x1f /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+
+.debug_info     0x00000000     0x40c8
+ .debug_info    0x00000000     0x2400 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .debug_info    0x00002400      0x5fc /tmp/ccUEMZHK.debug.temp.o
+                0x00002400                sound.cpp.ff18e66b
+ .debug_info    0x000029fc     0x166a /tmp/ccsoN3rO.debug.temp.o
+                0x000029fc                runtime.cpp.d92e58a6
+ .debug_info    0x00004066       0x31 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+ .debug_info    0x00004097       0x31 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+
+.debug_abbrev   0x00000000      0x795
+ .debug_abbrev  0x00000000      0x12f /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .debug_abbrev  0x0000012f      0x2bd /tmp/ccUEMZHK.debug.temp.o
+ .debug_abbrev  0x000003ec      0x359 /tmp/ccsoN3rO.debug.temp.o
+ .debug_abbrev  0x00000745       0x28 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+ .debug_abbrev  0x0000076d       0x28 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+
+.debug_loclists
+                0x00000000      0x7ef
+ .debug_loclists
+                0x00000000      0x7ef /tmp/ccPj5SEf.ltrans0.ltrans.o
+
+.debug_aranges  0x00000000       0xe8
+ .debug_aranges
+                0x00000000       0xa8 /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .debug_aranges
+                0x000000a8       0x20 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+ .debug_aranges
+                0x000000c8       0x20 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+
+.debug_rnglists
+                0x00000000      0x13e
+ .debug_rnglists
+                0x00000000      0x13e /tmp/ccPj5SEf.ltrans0.ltrans.o
+
+.debug_line     0x00000000     0x15cf
+ .debug_line    0x00000000     0x13dc /tmp/ccPj5SEf.ltrans0.ltrans.o
+ .debug_line    0x000013dc       0x69 /tmp/ccUEMZHK.debug.temp.o
+ .debug_line    0x00001445       0xa2 /tmp/ccsoN3rO.debug.temp.o
+ .debug_line    0x000014e7       0x6e /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+ .debug_line    0x00001555       0x7a /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+
+.debug_str      0x00000000     0x124f
+ .debug_str     0x00000000     0x124f /tmp/ccPj5SEf.ltrans0.ltrans.o
+                                0x12b (size before relaxing)
+ .debug_str     0x0000124f      0x7ee /tmp/ccUEMZHK.debug.temp.o
+ .debug_str     0x0000124f      0xc83 /tmp/ccsoN3rO.debug.temp.o
+ .debug_str     0x0000124f       0xa6 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+ .debug_str     0x0000124f       0xaa /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+
+.debug_line_str
+                0x00000000      0x301
+ .debug_line_str
+                0x00000000      0x301 /tmp/ccPj5SEf.ltrans0.ltrans.o
+                                 0xd6 (size before relaxing)
+ .debug_line_str
+                0x00000301      0x135 /tmp/ccUEMZHK.debug.temp.o
+ .debug_line_str
+                0x00000301      0x255 /tmp/ccsoN3rO.debug.temp.o
+ .debug_line_str
+                0x00000301       0x93 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memset.o)
+ .debug_line_str
+                0x00000301       0x97 /opt/riscv-none-elf/lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32ec/ilp32e/libc.a(libc_a-memcpy-asm.o)
+
+.debug_frame    0x00000000      0x184
+ .debug_frame   0x00000000      0x184 /tmp/ccPj5SEf.ltrans0.ltrans.o

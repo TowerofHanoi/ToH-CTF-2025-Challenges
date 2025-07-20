@@ -1,0 +1,65 @@
+The challenge starts with a 500+MB image.xz that once extracted becomes 2.4GB.
+It is a disk image with 2 partitions:
+
+$ file image
+image: DOS/MBR boot sector; partition 1 : ID=0xc, start-CHS (0x80,0,1), end-CHS (0x3ff,3,32), startsector 16384, 1048576 sectors; partition 2 : ID=0x83, start-CHS (0x3ff,3,32), end-CHS (0x3ff,3,32), startsector 1064960, 3932160 sectors
+
+Mounting it
+
+$ sudo losetup -P /dev/loop0 image
+
+reveals the two partitions, bootfs and rootfs.
+It is a standard 32 bit raspberry pi OS.
+Diffing the partition content against the latest raspberry pi OS reveals that
+there's only one difference: in /usr/bin there's one more file, flag_generator.
+
+$ file flag_generator
+flag_generator: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-armhf.so.3, BuildID[sha1]=80b33423546c51bc55c70e721d7e4d70ba4c6900, for GNU/Linux 3.2.0, not stripped
+
+Running this program on a Raspberri Pi connected to the Internet produces
+
+$ ./flag_generator
+flag{3765874926589572985013647593759}
+
+which is not a valid flag, or as it will turn out it was a valid flag for the
+2015 edition of polictf.
+
+The file is easy to disassemble
+
+$ arm-linux-gnueabihf-objdump -D flag_generator > disassembled.txt
+
+or even better to demangle C++ names
+
+$ arm-linux-gnueabihf-objdump -D flag_generator | c++filt > disassembled-pretty.txt
+
+There are just 3 functions:
+00010c60 <main>:
+00010eec <val(int)>:
+00011080 <flag()>:
+
+The main creates a pipe and then forks. In the child it closes stdout, dup2 the
+pipe into stdout and then calls execl passing as parameters the return value of
+multiple calls to val(int).
+In the parent stdin is closed and redirected to the pipe with another dup2, and
+flag() is called.
+
+flag() reads from stdin in a loop one line at a time, placing the received
+lines in a vector of strings. However, only the first string is printed,
+corresponding to the old flag.
+
+From here, there are multiple ways to solve this.
+It is possible to run it from a raspberry Pi using gdb and dump the entire
+vector of strings, or to disassemble the val(int) function to understand
+what does the execl do, discovering it is the following command:
+wget -q -S -O - https://pastebin.com/raw/bU92ZVyV
+
+Either by dumping the vector or fetching the pastebin, you get the following
+file containing the correct flag as the last line:
+
+flag{3765874926589572985013647593759}
+https://towerofhanoi.it/writeups/2015-07-12-exceptionally-obfuscated/
+https://pastebin.com/jsMNBNSE
+
+It's not 2015 you say?
+Right, so here's a newer flag
+toh{fkd57eiTHtrhrthy4yr6eJTYEj9er8s}
