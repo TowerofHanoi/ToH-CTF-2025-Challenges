@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload File — ZeroDrive</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #fefefe;
+      color: #111;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.25em;
+      margin-bottom: 40px;
+    }
+
+    form {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(180,180,180,0.1);
+    }
+
+    input[type="file"] {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    input[type="submit"] {
+      background-color: #00cc99;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00b388;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #3399ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Upload to ZeroDrive</h1>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required />
+    <input type="submit" value="Upload File" />
+  </form>
+  <a href="/">← Back to Stored Records</a>
+</body>
+</html>

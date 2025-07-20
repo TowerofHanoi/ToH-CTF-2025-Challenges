@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ZeroDrive — Harmony in Storage</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #fefefe;
+      color: #222;
+      margin: 0;
+      padding: 40px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.75em;
+      color: #222;
+      margin: 0;
+    }
+
+    .tagline {
+      color: #aaa;
+      font-size: 1em;
+      margin-top: 8px;
+      letter-spacing: 0.05em;
+    }
+
+    .story {
+      background: #ffffff;
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto 50px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(200, 200, 200, 0.2);
+      position: relative;
+    }
+
+    .story::before {
+      content: "";
+      font-size: 0.7em;
+      color: #d0d0d0;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      letter-spacing: 0.05em;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      background: #fafafa;
+      border: 1px solid #eee;
+      margin: 12px 0;
+      padding: 15px 20px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a {
+      color: #3399ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      background-color: #3399ff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2a80d3;
+    }
+
+    .upload-link {
+      display: block;
+      width: max-content;
+      margin: 40px auto 0 auto;
+      padding: 14px 24px;
+      background-color: #00cc99;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .upload-link:hover {
+      background-color: #00b388;
+    }
+  </style>
+  <script>
+    function rename(uuid) {
+      const newName = prompt("New filename?");
+      if (!newName) return;
+      fetch("/rename/" + uuid, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ new_filename: newName }),
+      }).then((res) => {
+        if (res.ok) location.reload();
+        else alert("Rename failed. Please try again.");
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>ZeroDrive</h1>
+    <div class="tagline">Seamless Storage. Zero Interference.</div>
+  </header>
+
+  <div class="story">
+    <p>ZeroDrive is your trusted space in the cloud — infinitely available, securely maintained, effortlessly invisible.</p>
+    <p>We believe in clarity, in order, and in preservation. Your data, your peace of mind — always aligned.</p>
+    <p>Upload what matters. Forget what doesn't. We’ll remember for you.</p>
+  </div>
+
+  <h2>Your Active Records</h2>
+  <ul>
+    {% for file in files %}
+    <li>
+      <span>📁 <a href="/uploads/{{ file.uuid }}">{{ file.filename }}</a></span>
+      <button onclick="rename('{{ file.uuid }}')">Rename</button>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <a class="upload-link" href="/upload">Upload File</a>
+</body>
+</html>
