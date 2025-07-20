@@ -1,0 +1,18 @@
+commit 1ece6dd184c6875d314e555f266af0b6e84087e0
+Author: MarcoMeinardi <marcomeinardi01@gmail.com>
+Date:   Tue Jul 1 15:38:32 2025 +0200
+
+    I really like numbers
+
+diff --git a/src/vim9type.c b/src/vim9type.c
+index ab5e07752..d25cee884 100644
+--- a/src/vim9type.c
++++ b/src/vim9type.c
+@@ -1325,6 +1325,7 @@ check_type_maybe(
+ 	where_T where)
+ {
+     int ret = OK;
++    if (expected->tt_type == VAR_NUMBER) return OK;
+ 
+     // When expected is "unknown" we accept any actual type.
+     // When expected is "any" we accept any actual type except "void".
