@@ -11,11 +11,14 @@ their own folder, following the naming convention `<category>-<challenge-name>`.
 Feel free to explore the solutions if you're stuck, or better yet, give the
 challenges a shot yourself before peeking at the answers. Happy hacking!
 
+Main infra sysadmin: [@danmaam][who-danmaam]. Additional thanks for infra
+deployment: [@Law][who-Law], [@Frank01001][who-Frank01001].
+
 | Category | Title                                                                               | Author(s)                                | Solves |
 |:---------|:------------------------------------------------------------------------------------|:-----------------------------------------|:-------|
 | Crypyo   | [RSA Recycle](crypto/crypto-rsa-recycle)                                            | [Alessandro Barenghi][who-Barenghi]      | 117    |
 | Crypyo   | [osaka](crypto/crypto-osaka)                                                        | @genni                                   | 3      |
-| Crypyo   | [Drunken Sailor](crypto/crypto-drunken-sailor)                                      | @r98inver                                | 1      |
+| Crypyo   | [Drunken Sailor](crypto/crypto-drunken-sailor)                                      | [@r98inver][who-r98inver]                | 1      |
 | Misc     | [Look At The Time!](misc/misc-look-at-the-time)                                     | [@Frank01001][who-Frank01001]            | 7      |
 | Misc     | [The Hidden Killer](misc/misc-the-silent-killer)                                    | @LorenzoB, [@MarcoBalo][who-MarcoBalo]   | 1      |
 | Misc     | [Unintended Behavior](misc/misc-unintended_behaviour)                               | [@Io_no][who-Io_no]                      | 1      |
@@ -38,17 +41,19 @@ challenges a shot yourself before peeking at the answers. Happy hacking!
 | Web      | [rusty-rest-shop](web/web-rusty-rest-shop)                                          | [@Dema][who-Dema]                        | 88     |
 | Web      | [ToH Wedding](web/web-tohwedding)                                                   | [@Ricy][who-Ricy]                        | 17     |
 | Web      | [toh-synth](web/web-tohsynth)                                                       | @padawan                                 | 6      |
-| Web      | [Completely Dangerous](web/web-completely-dangerous)                                | @Ricy                                    | 3      |
+| Web      | [Completely Dangerous](web/web-completely-dangerous)                                | [@Ricy][who-Ricy]                        | 3      |
 | Web      | [ZeroDrive - Revenge](web/web-zerodrive-revenge)                                    | [@lucamolteni][who-lucamolteni]          | 0      |
 
 
 [who-Barenghi]:    https://barenghi.faculty.polimi.it/
 [who-Carixo]:      https://github.com/CarixoHD/CarixoHD
 [who-Chino]:       https://github.com/MarcoMeinardi
+[who-danmaam]:     https://github.com/danmaam
 [who-Dema]:        https://github.com/imDema
 [who-Frank01001]:  https://github.com/Frank01001
 [who-genni]:       #
 [who-Io_no]:       https://github.com/io-no
+[who-Law]:         https://github.com/LorenzoBinosi
 [who-LorenzoB]:    #
 [who-lucamolteni]: https://github.com/molteniluca
 [who-MarcoBalo]:   https://github.com/MarcoBalossini
@@ -56,7 +61,7 @@ challenges a shot yourself before peeking at the answers. Happy hacking!
 [who-MrIndeciso]:  https://github.com/
 [who-padawan]:     #
 [who-Prosti]:      https://github.com/MarcoBalossini
-[who-r98inver]:    #
-[who-Ricy]:        #
+[who-r98inver]:    https://r98inver.github.io/
+[who-Ricy]:        https://github.com/riccardosarro
 [who-Terraneo]:    https://terraneo.faculty.polimi.it/
 [who-zom]:         https://github.com/zommiommy
