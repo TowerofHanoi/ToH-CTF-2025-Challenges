@@ -1,0 +1,16 @@
+services:
+  keras_app:
+    build: .
+    privileged: true
+    restart: always
+    container_name: intended_behaviour
+    ports:
+      - "1337:1337"
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - intended_behaviour_net
+
+networks:
+  intended_behaviour_net:
+    driver: bridge
