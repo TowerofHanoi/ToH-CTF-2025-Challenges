@@ -1,9 +1,25 @@
 # Completely Dangerous<br><small style="color: #888;font-size: 20px;">writeup @ ToH CTF 2025</small>
-<span style="background-color: #121212; padding: 4px; border-radius: 3px; margin-right: 2px;">Category: `web`</span> <span style="background-color: #121212; padding: 4px; border-radius: 3px; margin-right: 2px;">Author: [Ricy](https://github.com/riccardosarro)</span> <span style="background-color: #121212; padding: 4px; border-radius: 3px;">Solves: `2`</span>
+<span style="background-color: #121212; padding: 4px; border-radius: 3px; margin-right: 2px;">Category: `web`</span> <span style="background-color: #121212; padding: 4px; border-radius: 3px; margin-right: 2px;">Author: [`Ricy`](https://github.com/riccardosarro)</span> <span style="background-color: #121212; padding: 4px; border-radius: 3px;">Solves: `2`</span>
 
 > I am developing this app with a beautiful feature that allows users to color and choose their name and color. But... I believe something is not right.
 
-## Source code
+<hr/>
+
+## Index
+1. [TL;DR](#tldr)
+2. [Source code](#source-code)
+3. [Exploitation](#exploitation)
+4. [Exploit script](#exploit-script)
+
+<hr/>
+<span id="tldr"></span>
+
+### 1. `TL;DR`
+The challenge is vulnerable to **CSRF** and stored Cross-Site Scripting (**stored XSS**) attacks, due to the way the app handles user settings. Furthermore, the bot has their credentials saved in a custom firefox profile, which has **user preferences for autofilling forms** set to true, that can be used to **autocomplete** the login form and access the admin dashboard, where the flag is.
+
+<span id="source-code"></span>
+
+## 2. Source code
 The bot uses a custom firefox profile, where we find in `bot/firefox_profile/logins.json` the credentials saved. We can't see the credentials directly because they are encrypted. But we can either use the `key4.db` file or starting a firefox instance with the profile to see the credentials, which in this case are `admin` and `testpaswd`. Credentials in the remote server are different, so we can use those just to test locally.
 
 In React and many other frameworks, when you render a string directly with the `children` key or the `{}` syntax, it is automatically escaped to prevent XSS. However, you can use a special key called `dangerouslySetInnerHTML` to render HTML directly, which is not escaped and can lead to XSS if not handled properly.
@@ -58,7 +74,11 @@ export async function POST(request: NextRequest) {
 ...
 ```
 
-So, we can craft a UserSettings with the key `dangerouslySetInnerHTML` with a value of `{"__html": "payloadxss"}` into the `displayName` field with a POST to `/api/settings`, while we're logged in. This will store the xss payload to the logged user and execute the script when the dashboard of that user is loaded.
+<span id="exploitation"></span>
+
+## 3. Exploitation
+
+To exploit this vulnerability we can craft a UserSettings with the key `dangerouslySetInnerHTML` with a value of `{"__html": "payloadxss"}` into the `displayName` field with a POST to `/api/settings`, while we're logged in. This will store the xss payload to the logged user and execute the script when the dashboard of that user is loaded.
 
 We now need to have the bot visit our page with the XSS payload. The bot though is already logged in, and we need the bot to have a session with the user that has the XSS payload we injected. Note that we can make the bot visit any website, given its protocol is `http` or `https`.
 
@@ -171,7 +191,10 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 </script>
 ```
 
-Final exploit:
+<span id="exploit-script"></span>
+
+## 4. Exploit script
+
 ```py
 import requests
 from pyngrok import ngrok

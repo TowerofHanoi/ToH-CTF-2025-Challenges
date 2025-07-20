@@ -1,0 +1,220 @@
+/* Screens Resolution : 992px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+  .main-slider {
+    height: 500px;
+  }
+}
+
+/* Screens Resolution : 992px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+  /* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+
+  /* ---------------------------------
+	3. MENU
+	--------------------------------- */
+
+  .payment-info .inner-tab > div {
+    display: initial;
+    justify-content: unset;
+    align-items: unset;
+  }
+  .payment-info .inner-tab label {
+    width: 100%;
+  }
+
+  .payment-info .inner-tab input {
+    text-align: center;
+  }
+
+  .payment-info .inner-tab textarea {
+    height: 5.5em;
+  }
+}
+
+/* Screens Resolution : 767px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  /* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+
+  p {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+
+  /* ---------------------------------
+	2. COMMONS FOR PAGE DESIGN
+	--------------------------------- */
+
+  .section {
+    padding: 50px 0 20px;
+  }
+
+  .section .heading {
+    padding-bottom: 20px;
+  }
+
+  .section .heading .heading-bottom,
+  footer .logo-wrapper .heading-bottom {
+    margin-top: 10px;
+  }
+
+  /* ---------------------------------
+	3. MENU
+	--------------------------------- */
+
+  header {
+    top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  header .logo {
+    margin: 10px 0;
+    height: 40px;
+  }
+
+  /* BOTTOM AREA */
+
+  header .main-menu {
+    text-align: left;
+    display: none;
+    float: none;
+    clear: both;
+    max-height: 400px;
+    overflow: auto;
+    border-top: 1px solid #ccc;
+    background: #333;
+  }
+
+  header .main-menu > li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid #444;
+  }
+
+  header .main-menu > li:last-child {
+    border-bottom: 0;
+  }
+
+  header .main-menu li > a {
+    display: block;
+    border: 0;
+    line-height: 1;
+    height: auto;
+    padding: 15px;
+    background: none;
+  }
+
+  /* DROPDOWN  */
+
+  header .main-menu li.drop-down > ul.drop-down-menu {
+    position: static;
+    box-shadow: none;
+  }
+
+  header .main-menu li.drop-down > ul.drop-down-inner li:first-child {
+    border-top: 1px solid #444;
+  }
+
+  /* DROPDOWN HOVER */
+
+  header .main-menu li.drop-down > ul.drop-down-menu li a {
+    padding-left: 25px;
+  }
+
+  header .main-menu li.drop-down > ul.drop-down-inner li a {
+    padding-left: 35px;
+  }
+
+  /* NAV ICON */
+
+  .menu-nav-icon {
+    display: inline-block;
+    float: right;
+  }
+
+  /* ---------------------------------
+	5. CONTACT AREA
+	--------------------------------- */
+
+  .contact-area .display-table {
+    display: block;
+  }
+
+  .contact-area .display-table .display-table-cell {
+    display: block;
+    padding: 0;
+  }
+
+  /* ---------------------------------
+	6. VIEW GALLERY
+	--------------------------------- */
+
+  .galery-area .gallery-btn {
+    margin-top: 10px;
+  }
+
+  /* ---------------------------------
+	7. FOOTER
+	--------------------------------- */
+
+  footer ul > li > a {
+    padding: 10px 7px;
+  }
+
+  footer .newsletter .email-area {
+    width: 90%;
+  }
+}
+
+/* Screens Resolution : 479px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  /* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Screens Resolution : 359px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 359px) {
+}
+
+/* Screens Resolution : 290px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 290px) {
+}
