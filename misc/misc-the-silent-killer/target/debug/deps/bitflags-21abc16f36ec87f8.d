@@ -1,0 +1,11 @@
+/home/ronin/Desktop/Chals/ToH/writeups/misc-the-silent-killer/target/debug/deps/libbitflags-21abc16f36ec87f8.rmeta: /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/lib.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/iter.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/parser.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/traits.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/public.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/internal.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/external.rs
+
+/home/ronin/Desktop/Chals/ToH/writeups/misc-the-silent-killer/target/debug/deps/bitflags-21abc16f36ec87f8.d: /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/lib.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/iter.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/parser.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/traits.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/public.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/internal.rs /home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/external.rs
+
+/home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/lib.rs:
+/home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/iter.rs:
+/home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/parser.rs:
+/home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/traits.rs:
+/home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/public.rs:
+/home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/internal.rs:
+/home/ronin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.1/src/external.rs:

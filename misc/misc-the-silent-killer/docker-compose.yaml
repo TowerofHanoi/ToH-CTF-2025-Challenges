@@ -1,0 +1,18 @@
+
+services:
+  killer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: killer:latest
+    container_name: killer
+    mem_limit: 256m
+    memswap_limit: 256m
+    pids_limit: 20
+    ports:
+      - "4242:4242"
+    user: "nobody:nogroup"
+    restart: "no"
+    tty: true 
+    stdin_open: true 
+    entrypoint: ["/bin/sh", "-c", "/usr/local/bin/killer & sleep 1; nc localhost 7777; wait"]
