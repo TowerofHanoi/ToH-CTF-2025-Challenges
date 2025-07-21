@@ -371,6 +371,8 @@ vals = [
 
 sums = [round(pow(v, 1/3)) for v in vals]
 
+charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 _:{}?"
+
 for c in range(32, 127):
     try:
         print(chr(c), end=': toh{')
@@ -378,8 +380,11 @@ for c in range(32, 127):
         base = c
         for s in sums[::-1]:
             x = s - base
-            print(chr(x), end='')
+            if chr(x) not in charset:
+                print()
+                raise ValueError("Invalid character")
             base = x
+            print(chr(x), end='')
         print('}')
     except:
         pass
@@ -388,4 +393,4 @@ This script will output all the possible flags that pass the check, and we can s
 ```bash
 p: toh{pr0v0l4ng_1s5_f45t3r_th4n_pyth0n}
 ```
-is the only valid flag that passes the check.
+is the only valid flag returned.
