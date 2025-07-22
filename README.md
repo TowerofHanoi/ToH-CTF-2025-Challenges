@@ -17,10 +17,10 @@ deployment: [@Law][who-Law], [@Frank01001][who-Frank01001].
 | Category | Title                                                                               | Author(s)                                | Solves |
 |:---------|:------------------------------------------------------------------------------------|:-----------------------------------------|:-------|
 | Crypyo   | [RSA Recycle](crypto/crypto-rsa-recycle)                                            | [Alessandro Barenghi][who-Barenghi]      | 117    |
-| Crypyo   | [osaka](crypto/crypto-osaka)                                                        | [@genni](who-genni)                      | 3      |
+| Crypyo   | [osaka](crypto/crypto-osaka)                                                        | [@genni][who-genni]                      | 3      |
 | Crypyo   | [Drunken Sailor](crypto/crypto-drunken-sailor)                                      | [@r98inver][who-r98inver]                | 1      |
 | Misc     | [Look At The Time!](misc/misc-look-at-the-time)                                     | [@Frank01001][who-Frank01001]            | 7      |
-| Misc     | [The Hidden Killer](misc/misc-the-silent-killer)                                    | [@LorenzoB](who-LorenzoB), [@MarcoBalo][who-MarcoBalo]   | 1      |
+| Misc     | [The Hidden Killer](misc/misc-the-silent-killer)                                    | [@LorenzoB][who-LorenzoB], [@MarcoBalo][who-MarcoBalo]   | 1      |
 | Misc     | [Unintended Behavior](misc/misc-unintended_behaviour)                               | [@Io_no][who-Io_no]                      | 1      |
 | Misc     | [Intended Behaviour](misc/misc-intended-behaviour)                                  | [@Io_no][who-Io_no]                      | 0      |
 | Pwn      | [Free Provola](pwn/pwn-free-provola)                                                | [@Carixo][who-Carixo]                    | 15     |
