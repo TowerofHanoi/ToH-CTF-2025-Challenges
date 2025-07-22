@@ -17,10 +17,10 @@ deployment: [@Law][who-Law], [@Frank01001][who-Frank01001].
 | Category | Title                                                                               | Author(s)                                | Solves |
 |:---------|:------------------------------------------------------------------------------------|:-----------------------------------------|:-------|
 | Crypyo   | [RSA Recycle](crypto/crypto-rsa-recycle)                                            | [Alessandro Barenghi][who-Barenghi]      | 117    |
-| Crypyo   | [osaka](crypto/crypto-osaka)                                                        | @genni                                   | 3      |
+| Crypyo   | [osaka](crypto/crypto-osaka)                                                        | [@genni](who-genni)                      | 3      |
 | Crypyo   | [Drunken Sailor](crypto/crypto-drunken-sailor)                                      | [@r98inver][who-r98inver]                | 1      |
 | Misc     | [Look At The Time!](misc/misc-look-at-the-time)                                     | [@Frank01001][who-Frank01001]            | 7      |
-| Misc     | [The Hidden Killer](misc/misc-the-silent-killer)                                    | @LorenzoB, [@MarcoBalo][who-MarcoBalo]   | 1      |
+| Misc     | [The Hidden Killer](misc/misc-the-silent-killer)                                    | [@LorenzoB](who-LorenzoB), [@MarcoBalo][who-MarcoBalo]   | 1      |
 | Misc     | [Unintended Behavior](misc/misc-unintended_behaviour)                               | [@Io_no][who-Io_no]                      | 1      |
 | Misc     | [Intended Behaviour](misc/misc-intended-behaviour)                                  | [@Io_no][who-Io_no]                      | 0      |
 | Pwn      | [Free Provola](pwn/pwn-free-provola)                                                | [@Carixo][who-Carixo]                    | 15     |
@@ -36,11 +36,11 @@ deployment: [@Law][who-Law], [@Frank01001][who-Frank01001].
 | Rev      | [provolang](rev/rev-provolang)                                                      | [@MrIndeciso][who-MrIndeciso]            | 1      |
 | Rev      | [PPC64LEL](rev/rev-ppc64lel)                                                        | [@mebeim][who-mebeim]                    | 0      |
 | Rev      | [Small Embedded System](rev/rev-small-embedded-system)                              | [Federico Terraneo][who-Terraneo]        | 0      |
-| Rev      | hardware-assisted-pdf (writeup WIP)                                                 | [@MrIndeciso][who-MrIndeciso]            | 0      |
+| Rev      | [hardware-assisted-pdf](rev/rev-hardware-assisted-pdf)                              | [@MrIndeciso][who-MrIndeciso]            | 0      |
 | Web      | [ZeroDrive](web/web-zerodrive)                                                      | [@lucamolteni][who-lucamolteni]          | 119    |
 | Web      | [rusty-rest-shop](web/web-rusty-rest-shop)                                          | [@Dema][who-Dema]                        | 88     |
 | Web      | [ToH Wedding](web/web-tohwedding)                                                   | [@Ricy][who-Ricy]                        | 17     |
-| Web      | [toh-synth](web/web-tohsynth)                                                       | @padawan                                 | 6      |
+| Web      | [toh-synth](web/web-tohsynth)                                                       | [@padawan][who-padawan]                  | 6      |
 | Web      | [Completely Dangerous](web/web-completely-dangerous)                                | [@Ricy][who-Ricy]                        | 3      |
 | Web      | [ZeroDrive - Revenge](web/web-zerodrive-revenge)                                    | [@lucamolteni][who-lucamolteni]          | 0      |
 
@@ -51,15 +51,15 @@ deployment: [@Law][who-Law], [@Frank01001][who-Frank01001].
 [who-danmaam]:     https://github.com/danmaam
 [who-Dema]:        https://github.com/imDema
 [who-Frank01001]:  https://github.com/Frank01001
-[who-genni]:       #
+[who-genni]:       https://github.com/Genni21
 [who-Io_no]:       https://github.com/io-no
 [who-Law]:         https://github.com/LorenzoBinosi
-[who-LorenzoB]:    #
+[who-LorenzoB]:    https://github.com/LorenzoBossi
 [who-lucamolteni]: https://github.com/molteniluca
 [who-MarcoBalo]:   https://github.com/MarcoBalossini
 [who-mebeim]:      https://github.com/mebeim
-[who-MrIndeciso]:  https://github.com/
-[who-padawan]:     #
+[who-MrIndeciso]:  https://github.com/MrIndeciso
+[who-padawan]:     https://github.com/lucapada
 [who-Prosti]:      https://github.com/MarcoBalossini
 [who-r98inver]:    https://r98inver.github.io/
 [who-Ricy]:        https://github.com/riccardosarro
