@@ -60,7 +60,7 @@ deployment: [@Law][who-Law], [@Frank01001][who-Frank01001].
 [who-mebeim]:      https://github.com/mebeim
 [who-MrIndeciso]:  https://github.com/MrIndeciso
 [who-padawan]:     https://github.com/lucapada
-[who-Prosti]:      https://github.com/MarcoBalossini
+[who-Prosti]:      https://github.com/GabrielProstitis
 [who-r98inver]:    https://r98inver.github.io/
 [who-Ricy]:        https://github.com/riccardosarro
 [who-Terraneo]:    https://terraneo.faculty.polimi.it/
